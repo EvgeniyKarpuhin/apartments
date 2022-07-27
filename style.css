@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url(./img/tel-aviv-5159163_1920.jpg) no-repeat;
+    background-size: cover;
+}
+
+/* allura-regular - latin */
+@font-face {
+    font-family: 'Allura';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/allura-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/allura-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    align-items: center;
+}
+
+.header__company-name {
+    font-family: 'Allura';
+    font-size: 42px;
+    color: gold;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__text,
+.header__phone {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.header__social {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
