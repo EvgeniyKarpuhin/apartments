@@ -1,17 +1,25 @@
 <template>
-    <h2>Каталог квартир</h2>
-    <!--Здесь будет список-->
-    <div class="catalog">
-        <ApartmentCard v-for="apt in apartments" :key="apt.id" :apartment="apt" />
-        <!-- <img :src="aptImg1" alt="apt"> -->
+    <div v-if="apartment">
+        <h2>{{ apartment.title }}</h2>
+
+        <Carousel :items-to-show="1" :wrap-around="true" autoplay="true">
+            <Slide v-for="(img, index) in apartment.images[0]" :key="index">
+                <img :src="img" alt="фото" class="slider-image">
+            </Slide>
+        </Carousel>
+
+        <!-- <img :src="apartment.image" alt="фото"> -->
+        <p>{{ apartment.description }}</p>
+        <p>{{ apartment.price }} $ в сутки</p>
     </div>
 </template>
 
 <script setup>
-import ApartmentCard from '@/components/ApartmentCard.vue';
+import { ref, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
+import { Carousel, Slide } from 'vue3-carousel';
 
-
-const apartments = [
+const mockApartments = [
     {
         id: 1,
         title: 'Двухкомнатная квартира',
@@ -39,14 +47,24 @@ const apartments = [
             '/images/apartment2/6.jpg'
         ],
         price: 130
-    }
+    },
 ]
+
+const route = useRoute()
+const apartment = ref(null)
+
+onMounted(() => {
+    const id = Number(route.params.id)
+    apartment.value = mockApartments.find(a => a.id === id)
+})
 </script>
 
 <style scoped>
-.catalog {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
+.slider-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 400px;
 }
 </style>

@@ -1,6 +1,12 @@
 <template>
     <div class="apartment-card">
-    <img :src="apartment.image" alt="Фото квартиры" class="image" />
+      <swiper :modules="[Navigation, Pagination]" navigation pagination class="mySwiper">
+        <swiper-slide v-for="(img, index) in apartment.images" :key="index">
+          <img :src="img" alt="Фото квартиры" class="image" />
+        </swiper-slide>
+      </swiper>
+      
+    <!-- <img :src="apartment.images[3]" alt="Фото квартиры" class="image" /> -->
     <div class="info">
       <h3>{{ apartment.title }}</h3>
       <p>{{ apartment.description }}</p>
@@ -11,13 +17,25 @@
 </template>
 
 <script setup>
-import { useApartmentSrore } from '@/store/apartmentStore';
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation, Pagination } from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+// import { Pagination } from 'vue3-carousel';
 
 const props = defineProps ({
     apartment: Object
 })
 
-const store = useApartmentSrore()
+// const router = useRouter()
+
+// function openDetails() {
+//   router.push(`/apartment/$apartment:id`)
+// }
+
+// const store = useApartmentSrore()
 
 function addToFavorites() {
     store.addFavorite(apartment.id)
@@ -25,6 +43,17 @@ function addToFavorites() {
 </script>
 
 <style scoped>
+
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .apartment-card {
   display: flex;
   flex-direction: column;
@@ -38,7 +67,8 @@ function addToFavorites() {
 
 .image {
   width: 100%;
-  height: 200px;
+  height: auto;
+  border-radius: 8px;
   object-fit: cover;
 }
 
