@@ -1,6 +1,12 @@
 <template>
     <div class="apartment-card">
-      <swiper :modules="[Navigation, Pagination]" navigation pagination class="mySwiper">
+      <swiper :modules="[Navigation, Pagination, Autoplay ]" 
+        :slides-per-view="1" 
+        :autoplay="{ delay: 3000, disableOnInteraction: false }" 
+        navigation 
+        pagination 
+        class="mySwiper"
+      >
         <swiper-slide v-for="(img, index) in apartment.images" :key="index">
           <img :src="img" alt="Фото квартиры" class="image" />
         </swiper-slide>
@@ -16,7 +22,7 @@
 
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation, Pagination } from 'swiper/modules'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -67,6 +73,10 @@ function addToFavorites() {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
+}
+
+.swiper-zoom-container img {
+  max-width: 100%;
 }
 
 .info {
