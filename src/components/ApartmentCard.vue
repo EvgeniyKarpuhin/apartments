@@ -5,8 +5,6 @@
           <img :src="img" alt="Фото квартиры" class="image" />
         </swiper-slide>
       </swiper>
-      
-    <!-- <img :src="apartment.images[3]" alt="Фото квартиры" class="image" /> -->
     <div class="info">
       <h3>{{ apartment.title }}</h3>
       <p>{{ apartment.description }}</p>
@@ -23,7 +21,6 @@ import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-// import { Pagination } from 'vue3-carousel';
 
 const props = defineProps ({
     apartment: Object
