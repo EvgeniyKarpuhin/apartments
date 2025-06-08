@@ -116,7 +116,7 @@ const apartments = [
 
 <style scoped>
 h2 {
-    margin: 50px 0;
+    margin-bottom: 50px;
 }
 .catalog {
   display: flex;
