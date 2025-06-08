@@ -32,14 +32,6 @@ const props = defineProps ({
     apartment: Object
 })
 
-// const router = useRouter()
-
-// function openDetails() {
-//   router.push(`/apartment/$apartment:id`)
-// }
-
-// const store = useApartmentSrore()
-
 function addToFavorites() {
     store.addFavorite(apartment.id)
 }
