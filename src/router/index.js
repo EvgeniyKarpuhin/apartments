@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from './Home.vue'
+import Home from '../pages/Home.vue'
 import TelAviv from '../pages/TelAviv.vue'
 import Netanya from '../pages/Netanya.vue'
 

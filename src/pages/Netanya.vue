@@ -1,5 +1,5 @@
 <template>
-    <h2>Нетания</h2>
+    <!-- <h2>Нетания</h2> -->
     <!--Здесь будет список-->
     <div class="catalog">
         <ApartmentCard v-for="apt in apartments" :key="apt.id" :apartment="apt" />
@@ -115,13 +115,5 @@ const apartments = [
 </script>
 
 <style scoped>
-h2 {
-    margin-bottom: 50px;
-}
-.catalog {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
+
 </style>

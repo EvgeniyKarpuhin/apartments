@@ -57,7 +57,7 @@ function addToFavorites() {
   overflow: hidden;
   background: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  max-width: 320px;
+  max-width: 350px;
 }
 
 .image {
