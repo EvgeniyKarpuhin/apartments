@@ -15,7 +15,7 @@
       <h3>{{ apartment.title }}</h3>
       <p>{{ apartment.description }}</p>
       <p class="price">💰 {{ apartment.price }} $ в сутки</p>
-      <button @click="addToFavorites">❤️ В избранное</button>
+      <!-- <button @click="addToFavorites">❤️ В избранное</button> -->
     </div>
   </div>
 </template>
