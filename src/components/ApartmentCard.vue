@@ -16,14 +16,20 @@
       <h3>{{ apartment.title }}</h3>
       <p>{{ apartment.description }}</p>
       <p class="price">💰 {{ apartment.price }} $ в сутки</p>
-      <!-- <button @click="addToFavorites">❤️ В избранное</button> -->
     </div>
+
     <div v-if="modalVisible" class="modal-overlay" @click.self="closeModal">
       <div class="modal-content">
-        <img :src="apartment.images[currentIndex]" alt="Увеличенное фото">
+        <div class="modal-swiper-wrapper">
+          <swiper :modules="[Navigation]" :slides-per-view="1" navigation :initial-slide="currentIndex" class="modal-swiper">
+            <swiper-slide v-for="(img, index) in apartment.images" :key="index">
+              <div class="slide-content">
+                <img :src="img" alt="Увеличенное фото">
+              </div>
+            </swiper-slide>
+          </swiper>
+        </div>
         <button class="close-button" @click="closeModal">✖</button>
-        <button class="nav-button prev" @click.stop="prevImage">◀</button>
-        <button class="nav-button next" @click.stop="nextImage">▶</button>
       </div>
     </div>
   </div>
@@ -53,19 +59,6 @@ function openModal(index) {
 function closeModal() {
   modalVisible.value = false
 }
-
-function prevImage() {
-  currentIndex.value = (currentIndex.value - 1 + apartment.images.length) % apartment.images.length
-}
-
-function nextImage() {
-  currentIndex.value = (currentIndex.value + 1) % apartment.images.length
-}
-
-
-// function addToFavorites() {
-//     store.addFavorite(apartment.id)
-// }
 </script>
 
 <style scoped>
@@ -73,6 +66,9 @@ function nextImage() {
 .swiper {
   width: 100%;
   height: 300px;
+}
+.swiper-slide {
+  height: 100%;
 }
 
 .swiper-slide img {
@@ -137,8 +133,31 @@ button {
 
 .modal-content {
   position: relative;
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 90vw;
+  max-height: 90vh;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-swiper :deep(.swiper-slide) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .modal-content img {
@@ -157,13 +176,13 @@ button {
   cursor: pointer;
   padding: 0.25rem 0.6rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 10;
 }
 
 .nav-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  /* background: rgba(255,255,255,0.8); */
   border: none;
   border-radius: 50%;
   font-size: 1.5rem;
