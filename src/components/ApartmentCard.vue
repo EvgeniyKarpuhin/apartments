@@ -1,10 +1,9 @@
 <template>
     <div class="apartment-card">
-      <swiper :modules="[Navigation, Pagination, Autoplay ]" 
+      <swiper :modules="[ Pagination, Autoplay ]" 
         :slides-per-view="1" 
         :loop="true"
         :autoplay="{ delay: 3000, disableOnInteraction: false }" 
-        navigation 
         pagination 
         class="mySwiper"
       >
@@ -15,7 +14,7 @@
     <div class="info">
       <h3>{{ apartment.title }}</h3>
       <p>{{ apartment.description }}</p>
-      <p class="price">💰 {{ apartment.price }} $ в сутки</p>
+      <p class="price">от {{ apartment.price }} $ в сутки</p>
     </div>
 
     <div v-if="modalVisible" class="modal-overlay" @click.self="closeModal">
@@ -95,11 +94,22 @@ function closeModal() {
   cursor: zoom-in;
 }
 
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  display: none !important;
+}
+
 .swiper-zoom-container img {
   max-width: 100%;
 }
 
 .info {
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 11rem;
   padding: 1rem;
 }
 
