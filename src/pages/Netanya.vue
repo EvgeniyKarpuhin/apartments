@@ -110,6 +110,72 @@ const apartments = [
             '/images/apartment12/7.jpg'
         ],
         price: 150
+    },
+    {
+        id: 7,
+        title: 'Трёхкомнатная квартира',
+        description: 'Квартира с 2я спальнями и залом на бульваре Ница, есть балкон и вид на море',
+        images: [
+            '/images/apartment13/1.jpeg',
+            '/images/apartment13/2.jpeg',
+            '/images/apartment13/3.jpeg',
+            '/images/apartment13/4.jpeg',
+            '/images/apartment13/5.jpeg',
+            '/images/apartment13/6.jpeg',
+            '/images/apartment13/7.jpeg',
+            '/images/apartment13/8.jpeg',
+            '/images/apartment13/9.jpeg',
+            '/images/apartment13/10.jpeg',
+            '/images/apartment13/11.jpeg'
+        ],
+        price: 210
+    },
+    {
+        id: 8,
+        title: 'Трёхкомнатная квартира',
+        description: 'Квартира с 2я спальнями и залом в новом доме, есть балкон и вид на море',
+        images: [
+            '/images/apartment14/1.jpeg',
+            '/images/apartment14/2.jpeg',
+            '/images/apartment14/3.jpeg',
+            '/images/apartment14/4.jpeg',
+            '/images/apartment14/5.jpeg',
+            '/images/apartment14/6.jpeg',
+            '/images/apartment14/7.jpeg',
+            '/images/apartment14/8.jpeg',
+            '/images/apartment14/9.jpeg',
+            '/images/apartment14/10.jpeg',
+            '/images/apartment14/11.jpeg',
+            '/images/apartment14/12.jpeg'
+        ],
+        price: 200
+    },
+    {
+        id: 9,
+        title: 'Четыррёхкомнатная квартира',
+        description: 'Квартира с 3я спальнями и залом на улице Макдональд, есть балкон',
+        images: [
+            '/images/apartment15/1.jpeg',
+            '/images/apartment15/2.jpeg',
+            '/images/apartment15/3.jpeg',
+            '/images/apartment15/4.jpeg',
+            '/images/apartment15/5.jpeg',
+            '/images/apartment15/6.jpeg',
+            '/images/apartment15/7.jpeg',
+            '/images/apartment15/8.jpeg',
+            '/images/apartment15/9.jpeg',
+            '/images/apartment15/10.jpeg',
+            '/images/apartment15/11.jpeg',
+            '/images/apartment15/12.jpeg',
+            '/images/apartment15/13.jpeg',
+            '/images/apartment15/14.jpeg',
+            '/images/apartment15/15.jpeg',
+            '/images/apartment15/16.jpeg',
+            '/images/apartment15/17.jpeg',
+            '/images/apartment15/18.jpeg',
+            '/images/apartment15/19.jpeg'
+        ],
+        price: 180
     }
 ]
 </script>
