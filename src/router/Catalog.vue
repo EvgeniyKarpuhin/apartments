@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     
         <TelAviv />
         <Netanya />
@@ -10,5 +10,5 @@
 import TelAviv from '@/pages/TelAviv.vue';
 import Netanya from '@/pages/Netanya.vue';
 import BatYam from '@/pages/BatYam.vue';
-</script>
+</script> -->
 

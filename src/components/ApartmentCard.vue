@@ -1,10 +1,9 @@
 <template>
     <div class="apartment-card">
-      <swiper :modules="[ Pagination, Autoplay ]" 
+      <swiper :modules="[ Autoplay ]" 
         :slides-per-view="1" 
         :loop="true"
         :autoplay="{ delay: 3000, disableOnInteraction: false }" 
-        pagination 
         class="mySwiper"
       >
         <swiper-slide v-for="(img, index) in apartment.images" :key="index" @click="openModal(index)">
@@ -65,15 +64,21 @@ function closeModal() {
 .swiper {
   width: 100%;
   height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .swiper-slide {
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 8px;
 }
 .apartment-card {
   display: flex;
@@ -88,7 +93,7 @@ function closeModal() {
 
 .image {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 8px;
   object-fit: cover;
   cursor: zoom-in;
@@ -104,8 +109,6 @@ function closeModal() {
 }
 
 .info {
-  /* display: grid;
-  grid-template-rows: auto 1fr auto; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -165,15 +168,14 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .modal-content img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 90vh;
   height: auto;
   border-radius: 8px;
+  object-fit: contain;
 }
 
 .close-button {
