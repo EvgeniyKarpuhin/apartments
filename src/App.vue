@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
+      <header>
       <nav>
         <RouterLink to="/">Главная</RouterLink>
         <RouterLink to="/telaviv">Тель Авив</RouterLink>
@@ -14,6 +14,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
 
   <RouterView />
+  
 </template>
 
 <style scoped>
@@ -22,16 +23,10 @@ header {
   max-height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
 nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {
@@ -57,10 +52,6 @@ nav a:first-of-type {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
   }
 
   header .wrapper {

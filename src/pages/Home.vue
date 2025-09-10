@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="overlay">
         <h1 class="mrg">Аренда жилья в Израиле — просто и удобно</h1>
         <h2 class="mrg">Мы помогаем найти квартиры и дома для краткосрочной и долгосрочной аренды.<br>
             Все объекты проверены лично — вы будете уверены в качестве жилья.<br>
@@ -29,12 +29,12 @@
     </div>
 </template>
 
-<script setup>
-
-
-</script>
-
 <style scoped>
+.overlay {
+    background: aliceblue;
+    border-radius: 10px;
+    padding: 40px;
+}
 .mrg {
     margin-bottom: 50px;
 }
@@ -42,5 +42,9 @@
     font-size: 20px;
     margin: 30px 0;
     list-style-type: disclosure-closed;
+}
+
+.size-li:last-child {
+    margin: 0;
 }
 </style>
