@@ -31,7 +31,8 @@
 
 <style scoped>
 .overlay {
-    background: aliceblue;
+    background: rgba(238, 232, 189, 0.753);
+    opacity: .9;
     border-radius: 10px;
     padding: 40px;
 }
