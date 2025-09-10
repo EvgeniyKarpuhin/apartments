@@ -31,10 +31,10 @@
 
 <style scoped>
 .overlay {
-    background: rgba(238, 232, 189, 0.753);
-    opacity: .9;
+    background: rgba(255, 255, 255, 0.63);
     border-radius: 10px;
-    padding: 40px;
+    padding: 30px;
+    margin-top: 50px;
 }
 .mrg {
     margin-bottom: 50px;
