@@ -3,13 +3,15 @@ import Home from '../pages/Home.vue'
 import TelAviv from '../pages/TelAviv.vue'
 import Netanya from '../pages/Netanya.vue'
 import BatYam from '../pages/BatYam.vue'
+import Hotels from '../pages/Hotels.vue'
 
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/telaviv', name: 'TelAviv', component: TelAviv },
   { path: '/netanya', name: 'Netanya', component: Netanya },
-  { path: '/batyam', name: 'BatYam', component: BatYam }
+  { path: '/batyam', name: 'BatYam', component: BatYam },
+  { path: '/hotels', name: 'Hotels', component: Hotels }
 ]
 
 const router = createRouter({
