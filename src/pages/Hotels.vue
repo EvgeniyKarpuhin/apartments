@@ -116,6 +116,72 @@ const hotels = ref([
             '/images/hotels/herzliya/hrds/4.jpg'
         ]
     },
+    {
+        name: 'David Tower Hotel Netanya',
+        description: 'Отель с панорамным видом на Средиземное море расположен в центре Нетании, всего в 150 метрах от пляжа. К услугам гостей спа-центр, ресторан с модным баром, а также элегантно обставленные номера.',
+        price: 230,
+        images: [
+            '/images/hotels/netanya/david/1.jpg',
+            '/images/hotels/netanya/david/2.jpg',
+            '/images/hotels/netanya/david/3.jpg',
+            '/images/hotels/netanya/david/4.jpg'
+        ]
+    },
+    {
+        name: 'Island Luxurious Suites Hotel and Spa',
+        description: 'Тридцатиэтажный отель расположен в городе Нетания. К услугам гостей плавательный бассейн и очень просторные люксы с большим балконом, откуда открывается вид на Средиземное море.',
+        price: 240,
+        images: [
+            '/images/hotels/netanya/island/1.jpg',
+            '/images/hotels/netanya/island/2.jpg',
+            '/images/hotels/netanya/island/3.jpg',
+            '/images/hotels/netanya/island/4.jpg'
+        ]
+    },
+    {
+        name: 'Medi Terre Boutique Hotel',
+        description: 'Отель с бесплатным WiFi расположен в Нетании, в 200 м от пляжа Сизон и в 5 минутах ходьбы от пляжа Тамбона. К услугам гостей ресторан и бесплатная парковка на территории.',
+        price: 220,
+        images: [
+            '/images/hotels/netanya/medi/1.jpg',
+            '/images/hotels/netanya/medi/2.jpg',
+            '/images/hotels/netanya/medi/3.jpg',
+            '/images/hotels/netanya/medi/4.jpg'
+        ]
+    },
+    {
+        name: 'Leonardo Plaza Netanya Hotel',
+        description: 'Отель расположен в Нетании, в 350 метрах от песчаного пляжа на берегу Средиземного моря. К услугам гостей сезонный открытый бассейн с солнечной террасой.',
+        price: 220,
+        images: [
+            '/images/hotels/netanya/leo/1.jpg',
+            '/images/hotels/netanya/leo/2.jpg',
+            '/images/hotels/netanya/leo/3.jpg',
+            '/images/hotels/netanya/leo/4.jpg'
+        ]
+    },
+    {
+        name: 'Residence Beach Hotel',
+        description: 'Отель с видом на популярный пляж Сиронит расположен в самом центре Нетании. К услугам гостей современные номера с видом на Средиземное море.',
+        price: 130,
+        images: [
+            '/images/hotels/netanya/res/1.jpg',
+            '/images/hotels/netanya/res/2.jpg',
+            '/images/hotels/netanya/res/3.jpg',
+            '/images/hotels/netanya/res/4.jpg'
+        ]
+    },
+    {
+        name: 'Margoa Hotel Netanya',
+        description: 'Отель расположен на берегу моря в Нетании. Лифт рядом с отелем доставит гостей до пляжа. В отеле есть ресторан, бар и круглосуточная стойка регистрации.',
+        price: 110,
+        images: [
+            '/images/hotels/netanya/margoa/1.jpg',
+            '/images/hotels/netanya/margoa/2.jpg',
+            '/images/hotels/netanya/margoa/3.jpg',
+            '/images/hotels/netanya/margoa/4.jpg'
+        ]
+    }
 ])
 </script>
 
@@ -125,7 +191,7 @@ const hotels = ref([
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 .hotel-card {
