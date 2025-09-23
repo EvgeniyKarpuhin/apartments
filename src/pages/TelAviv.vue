@@ -16,12 +16,12 @@ const apartments = [
         title: 'Двухкомнатная квартира',
         description: 'Квартира с 1й спальней и залом на улице Бен Иуда в пешей доступности до пляжа',
         images: [
-            '/images/apartment1/1.jpg',
-            '/images/apartment1/2.jpg',
-            '/images/apartment1/3.jpg',
-            '/images/apartment1/4.jpg',
-            '/images/apartment1/5.jpg',
-            '/images/apartment1/6.jpg'
+            '/images/apartments/telaviv/1bdr-mrby/1.jpg',
+            '/images/apartments/telaviv/1bdr-mrby/2.jpg',
+            '/images/apartments/telaviv/1bdr-mrby/3.jpg',
+            '/images/apartments/telaviv/1bdr-mrby/4.jpg',
+            '/images/apartments/telaviv/1bdr-mrby/5.jpg',
+            '/images/apartments/telaviv/1bdr-mrby/6.jpg'
         ],
         price: 110
     },
@@ -30,12 +30,12 @@ const apartments = [
         title: 'Двухкомнатная квартира',
         description: 'Квартира с 1й спальней и залом на улице Бен Иуда в пешей доступности до пляжа, есть балкон',
         images: [
-            '/images/apartment2/1.jpg',
-            '/images/apartment2/2.jpg',
-            '/images/apartment2/3.jpg',
-            '/images/apartment2/4.jpg',
-            '/images/apartment2/5.jpg',
-            '/images/apartment2/6.jpg'
+            '/images/apartments/telaviv/1bdr-mrbys/1.jpg',
+            '/images/apartments/telaviv/1bdr-mrbys/2.jpg',
+            '/images/apartments/telaviv/1bdr-mrbys/3.jpg',
+            '/images/apartments/telaviv/1bdr-mrbys/4.jpg',
+            '/images/apartments/telaviv/1bdr-mrbys/5.jpg',
+            '/images/apartments/telaviv/1bdr-mrbys/6.jpg'
         ],
         price: 130
     },
@@ -44,17 +44,17 @@ const apartments = [
         title: 'Двухкомнатная квартира',
         description: 'Квартира с 1й спальней и залом на улице Дизенгоф недалеко от пляжа, есть балкон',
         images: [
-            '/images/apartment3/1.jpg',
-            '/images/apartment3/2.jpg',
-            '/images/apartment3/3.jpg',
-            '/images/apartment3/4.jpg',
-            '/images/apartment3/5.jpg',
-            '/images/apartment3/6.jpg',
-            '/images/apartment3/7.jpg',
-            '/images/apartment3/8.jpg',
-            '/images/apartment3/9.jpg',
-            '/images/apartment3/10.jpg',
-            '/images/apartment3/11.jpg'
+            '/images/apartments/telaviv/1bdr-mrdzb/1.jpg',
+            '/images/apartments/telaviv/1bdr-mrdzb/2.jpg',
+            '/images/apartments/telaviv/1bdr-mrdzb/3.jpg',
+            '/images/apartments/telaviv/1bdr-mrdzb/4.jpg',
+            '/images/apartments/telaviv/1bdr-mrdzb/5.jpg',
+            '/images/apartments/telaviv/1bdr-mrdzb/6.jpg',
+            '/images/apartments/telaviv/1bdr-mrdzb/7.jpg',
+            '/images/apartments/telaviv/1bdr-mrdzb/8.jpg',
+            '/images/apartments/telaviv/1bdr-mrdzb/9.jpg',
+            '/images/apartments/telaviv/1bdr-mrdzb/10.jpg',
+            '/images/apartments/telaviv/1bdr-mrdzb/11.jpg'
         ],
         price: 160
     },
@@ -63,15 +63,15 @@ const apartments = [
         title: 'Трёхкомнатная квартира',
         description: 'Квартира с 2я спальнями и залом на улице Дизенгоф недалеко от пляжа, есть балкон',
         images: [
-            '/images/apartment4/1.jpg',
-            '/images/apartment4/2.jpg',
-            '/images/apartment4/3.jpg',
-            '/images/apartment4/4.jpg',
-            '/images/apartment4/5.jpg',
-            '/images/apartment4/6.jpg',
-            '/images/apartment4/7.jpg',
-            '/images/apartment4/8.jpg',
-            '/images/apartment4/9.jpg'
+            '/images/apartments/telaviv/2bdr-mrdz/1.jpg',
+            '/images/apartments/telaviv/2bdr-mrdz/2.jpg',
+            '/images/apartments/telaviv/2bdr-mrdz/3.jpg',
+            '/images/apartments/telaviv/2bdr-mrdz/4.jpg',
+            '/images/apartments/telaviv/2bdr-mrdz/5.jpg',
+            '/images/apartments/telaviv/2bdr-mrdz/6.jpg',
+            '/images/apartments/telaviv/2bdr-mrdz/7.jpg',
+            '/images/apartments/telaviv/2bdr-mrdz/8.jpg',
+            '/images/apartments/telaviv/2bdr-mrdz/9.jpg'
         ],
         price: 220
     },
@@ -80,13 +80,13 @@ const apartments = [
         title: 'Трёхкомнатная квартира',
         description: 'Квартира с 2я спальнями и залом на улице Бен Иуда в пешей доступности до пляжа, есть терраса',
         images: [
-            '/images/apartment5/1.jpg',
-            '/images/apartment5/2.jpg',
-            '/images/apartment5/3.jpg',
-            '/images/apartment5/4.jpg',
-            '/images/apartment5/5.jpg',
-            '/images/apartment5/6.jpg',
-            '/images/apartment5/7.jpg'
+            '/images/apartments/telaviv/2bdr-mrbyp/1.jpg',
+            '/images/apartments/telaviv/2bdr-mrbyp/2.jpg',
+            '/images/apartments/telaviv/2bdr-mrbyp/3.jpg',
+            '/images/apartments/telaviv/2bdr-mrbyp/4.jpg',
+            '/images/apartments/telaviv/2bdr-mrbyp/5.jpg',
+            '/images/apartments/telaviv/2bdr-mrbyp/6.jpg',
+            '/images/apartments/telaviv/2bdr-mrbyp/7.jpg'
         ],
         price: 270
     },
@@ -95,16 +95,16 @@ const apartments = [
         title: 'Трёхкомнатная квартира',
         description: 'Квартира с 2я спальнями и залом на улице Пинскер недалеко от пляжа, 2 санузла, балкон',
         images: [
-            '/images/apartment6/1.jpg',
-            '/images/apartment6/2.jpg',
-            '/images/apartment6/3.jpg',
-            '/images/apartment6/4.jpg',
-            '/images/apartment6/5.jpg',
-            '/images/apartment6/6.jpg',
-            '/images/apartment6/7.jpg',
-            '/images/apartment6/8.jpg',
-            '/images/apartment6/9.jpg',
-            '/images/apartment6/10.jpg'
+            '/images/apartments/telaviv/2bdr-mrpi/1.jpg',
+            '/images/apartments/telaviv/2bdr-mrpi/2.jpg',
+            '/images/apartments/telaviv/2bdr-mrpi/3.jpg',
+            '/images/apartments/telaviv/2bdr-mrpi/4.jpg',
+            '/images/apartments/telaviv/2bdr-mrpi/5.jpg',
+            '/images/apartments/telaviv/2bdr-mrpi/6.jpg',
+            '/images/apartments/telaviv/2bdr-mrpi/7.jpg',
+            '/images/apartments/telaviv/2bdr-mrpi/8.jpg',
+            '/images/apartments/telaviv/2bdr-mrpi/9.jpg',
+            '/images/apartments/telaviv/2bdr-mrpi/10.jpg'
         ],
         price: 280
     }
