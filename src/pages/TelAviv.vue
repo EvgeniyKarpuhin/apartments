@@ -14,7 +14,12 @@ const apartments = [
     {
         id: 1,
         title: 'Двухкомнатная квартира',
-        description: 'Квартира с 1й спальней и залом на улице Бен Иуда в пешей доступности до пляжа',
+        description: [
+            'Планировка: спальня + зал с кухней',
+            'Количество человек: до 4',
+            'Расстояние до пляжа: 600 метров',
+            'Площадь: 40 кв.м.'
+        ],
         images: [
             '/images/apartments/telaviv/1bdr-mrby/1.jpg',
             '/images/apartments/telaviv/1bdr-mrby/2.jpg',

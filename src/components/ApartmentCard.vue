@@ -11,9 +11,14 @@
         </swiper-slide>
       </swiper>
     <div class="info">
-      <h3>{{ apartment.title }}</h3>
-      <p>{{ apartment.description }}</p>
-      <p class="price">от {{ apartment.price }} $ в сутки</p>
+      <h3 class="fw">{{ apartment.title }}</h3>
+      <ul>
+        <li v-for="(desc, index) in apartment.description" :key="index">
+          {{ desc }}
+        </li>
+      </ul>
+      <!-- <p>{{ apartment.description }}</p> -->
+      <p class="fw">от {{ apartment.price }} $ в сутки</p>
     </div>
 
     <div v-if="modalVisible" class="modal-overlay" @click.self="closeModal">
@@ -36,7 +41,7 @@
 <script setup>
 import { ref } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import { Autoplay, Navigation } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -113,12 +118,16 @@ function closeModal() {
   flex-direction: column;
   justify-content: space-between;
   height: 11rem;
-  padding: 1rem;
+  margin: 1rem;
 }
 
-.price {
+.info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fw {
   font-weight: bold;
-  margin-top: 0.5rem;
 }
 
 button {
