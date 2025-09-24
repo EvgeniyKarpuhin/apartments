@@ -117,7 +117,7 @@ function closeModal() {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 12rem;
+  height: 13rem;
   margin: 1rem;
 }
 
