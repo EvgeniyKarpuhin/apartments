@@ -17,7 +17,6 @@
           {{ desc }}
         </li>
       </ul>
-      <!-- <p>{{ apartment.description }}</p> -->
       <p class="fw">от {{ apartment.price }} $ в сутки</p>
     </div>
 
