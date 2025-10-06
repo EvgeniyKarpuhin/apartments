@@ -1,17 +1,36 @@
 <script setup>
+import { ref } from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
 
+const menuOpen = ref(false)
+
+function toggleMenu() {
+  menuOpen.value = !menuOpen.value
+}
 </script>
 
 <template>
       <header>
-      <nav>
+      <nav class="nav desktop">
         <RouterLink to="/">Главная</RouterLink>
         <RouterLink to="/telaviv">Тель Авив</RouterLink>
         <RouterLink to="/netanya">Нетания</RouterLink>
         <RouterLink to="/batyam">Бат Ям</RouterLink>
         <RouterLink to="/hotels">Отели</RouterLink>
       </nav>
+
+      <button class="burger" @click="toggleMenu">☰</button>
+
+      <div v-if="menuOpen" class="mobile-menu">
+        <button class="close" @click="toggleMenu">✖</button>
+        <nav>
+          <a href="/" @click="toggleMenu"></a>
+          <a href="/telaviv" @click="toggleMenu">Тель Авив</a>
+          <a href="/netanya" @click="toggleMenu">Нетания</a>
+          <a href="/batyam" @click="toggleMenu">Бат Ям</a>
+          <a href="/hotels" @click="toggleMenu">Отели</a>
+        </nav>
+      </div>
   </header>
 
   <RouterView />
@@ -22,6 +41,7 @@ import { RouterLink, RouterView } from 'vue-router'
 header {
   line-height: 1.5;
   max-height: 5vh;
+  justify-items: end;
 }
 
 nav {
@@ -65,6 +85,84 @@ nav a:first-of-type {
     font-size: 1rem;
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+}
+
+/*мобильная версия*/
+.burger {
+  display: none;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background: white;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  animation: slideIn 0.5s ease forwards;
+}
+
+
+
+.mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-menu nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #1b263b;
+}
+
+.close {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu.close {
+  animation: slideOut 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav.desktop {
+    display: none;
+  }
+  .burger {
+    display: block;
   }
 }
 </style>
