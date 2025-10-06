@@ -61,7 +61,8 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: url('/images/israel2.jpg');
+  background: url('/images/israel2.jpg') no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   transition:
     color 0.5s,
