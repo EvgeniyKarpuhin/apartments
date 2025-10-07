@@ -10,7 +10,7 @@ function toggleMenu() {
 </script>
 
 <template>
-      <header>
+    <header>
       <nav class="nav desktop">
         <RouterLink to="/">Главная</RouterLink>
         <RouterLink to="/telaviv">Тель Авив</RouterLink>
@@ -18,6 +18,16 @@ function toggleMenu() {
         <RouterLink to="/batyam">Бат Ям</RouterLink>
         <RouterLink to="/hotels">Отели</RouterLink>
       </nav>
+
+      <div class="header-contact">
+        <span class="contact-text">Связаться с нами:</span>
+        <a href="https://t.me/ArrowKnight" target="_blank" class="icon telegram" aria-label="Telegram">
+          <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://wa.me/972526717648" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
 
       <button class="burger" @click="toggleMenu">☰</button>
 
@@ -31,7 +41,7 @@ function toggleMenu() {
           <a href="/hotels" @click="toggleMenu">Отели</a>
         </nav>
       </div>
-  </header>
+    </header>
 
   <RouterView />
   
@@ -39,13 +49,15 @@ function toggleMenu() {
 
 <style scoped>
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   line-height: 1.5;
+  margin-top: 2vh;
   max-height: 5vh;
-  justify-items: end;
 }
 
 nav {
-  width: 100%;
   font-size: 12px;
   text-align: center;
 }
@@ -72,6 +84,8 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
   }
 
   header .wrapper {
@@ -84,8 +98,33 @@ nav a:first-of-type {
     text-align: left;
     font-size: 1rem;
     padding: 1rem 0;
-    margin-top: 1rem;
   }
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-text {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: .9;
+}
+
+.icon {
+  font-size: 1.5rem;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  background: none;
+}
+
+.telegram {
+  color: #0088cc;
 }
 
 /*мобильная версия*/
