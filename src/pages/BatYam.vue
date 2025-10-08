@@ -22,7 +22,7 @@
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/batyam/2bdr-bf87/1.jpeg',
+            imagePath('/images/apartments/batyam/2bdr-bf87/1.jpeg'),
             '/images/apartments/batyam/2bdr-bf87/2.jpeg',
             '/images/apartments/batyam/2bdr-bf87/3.jpeg',
             '/images/apartments/batyam/2bdr-bf87/4.jpeg',

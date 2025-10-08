@@ -9,6 +9,9 @@
 <script setup>
 import ApartmentCard from '@/components/ApartmentCard.vue';
 
+function imagePath(path) {
+  return `${import.meta.env.BASE_URL}${path}`
+}
 
 const apartments = [
     {
@@ -23,12 +26,12 @@ const apartments = [
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/telaviv/1bdr-mrby/1.jpg',
-            '/images/apartments/telaviv/1bdr-mrby/2.jpg',
-            '/images/apartments/telaviv/1bdr-mrby/3.jpg',
-            '/images/apartments/telaviv/1bdr-mrby/4.jpg',
-            '/images/apartments/telaviv/1bdr-mrby/5.jpg',
-            '/images/apartments/telaviv/1bdr-mrby/6.jpg'
+            imagePath('/images/apartments/telaviv/1bdr-mrby/1.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrby/2.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrby/3.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrby/4.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrby/5.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrby/6.jpg')
         ],
         price: 110
     },
@@ -44,12 +47,12 @@ const apartments = [
             'Балкон: есть'
         ],
         images: [
-            '/images/apartments/telaviv/1bdr-mrbys/1.jpg',
-            '/images/apartments/telaviv/1bdr-mrbys/2.jpg',
-            '/images/apartments/telaviv/1bdr-mrbys/3.jpg',
-            '/images/apartments/telaviv/1bdr-mrbys/4.jpg',
-            '/images/apartments/telaviv/1bdr-mrbys/5.jpg',
-            '/images/apartments/telaviv/1bdr-mrbys/6.jpg'
+            imagePath('/images/apartments/telaviv/1bdr-mrbys/1.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrbys/2.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrbys/3.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrbys/4.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrbys/5.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrbys/6.jpg')
         ],
         price: 130
     },
@@ -65,17 +68,17 @@ const apartments = [
             'Балкон: есть'
         ],
         images: [
-            '/images/apartments/telaviv/1bdr-mrdzb/1.jpg',
-            '/images/apartments/telaviv/1bdr-mrdzb/2.jpg',
-            '/images/apartments/telaviv/1bdr-mrdzb/3.jpg',
-            '/images/apartments/telaviv/1bdr-mrdzb/4.jpg',
-            '/images/apartments/telaviv/1bdr-mrdzb/5.jpg',
-            '/images/apartments/telaviv/1bdr-mrdzb/6.jpg',
-            '/images/apartments/telaviv/1bdr-mrdzb/7.jpg',
-            '/images/apartments/telaviv/1bdr-mrdzb/8.jpg',
-            '/images/apartments/telaviv/1bdr-mrdzb/9.jpg',
-            '/images/apartments/telaviv/1bdr-mrdzb/10.jpg',
-            '/images/apartments/telaviv/1bdr-mrdzb/11.jpg'
+            imagePath('/images/apartments/telaviv/1bdr-mrdzb/1.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrdzb/2.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrdzb/3.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrdzb/4.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrdzb/5.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrdzb/6.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrdzb/7.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrdzb/8.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrdzb/9.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrdzb/10.jpg'),
+            imagePath('/images/apartments/telaviv/1bdr-mrdzb/11.jpg')
         ],
         price: 160
     },
@@ -91,15 +94,15 @@ const apartments = [
             'Балкон: есть'
         ],
         images: [
-            '/images/apartments/telaviv/2bdr-mrdz/1.jpg',
-            '/images/apartments/telaviv/2bdr-mrdz/2.jpg',
-            '/images/apartments/telaviv/2bdr-mrdz/3.jpg',
-            '/images/apartments/telaviv/2bdr-mrdz/4.jpg',
-            '/images/apartments/telaviv/2bdr-mrdz/5.jpg',
-            '/images/apartments/telaviv/2bdr-mrdz/6.jpg',
-            '/images/apartments/telaviv/2bdr-mrdz/7.jpg',
-            '/images/apartments/telaviv/2bdr-mrdz/8.jpg',
-            '/images/apartments/telaviv/2bdr-mrdz/9.jpg'
+            imagePath('/images/apartments/telaviv/2bdr-mrdz/1.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrdz/2.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrdz/3.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrdz/4.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrdz/5.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrdz/6.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrdz/7.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrdz/8.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrdz/9.jpg')
         ],
         price: 220
     },
@@ -115,13 +118,13 @@ const apartments = [
             'Балкон: есть'
         ],
         images: [
-            '/images/apartments/telaviv/2bdr-mrbyp/1.jpg',
-            '/images/apartments/telaviv/2bdr-mrbyp/2.jpg',
-            '/images/apartments/telaviv/2bdr-mrbyp/3.jpg',
-            '/images/apartments/telaviv/2bdr-mrbyp/4.jpg',
-            '/images/apartments/telaviv/2bdr-mrbyp/5.jpg',
-            '/images/apartments/telaviv/2bdr-mrbyp/6.jpg',
-            '/images/apartments/telaviv/2bdr-mrbyp/7.jpg'
+            imagePath('/images/apartments/telaviv/2bdr-mrbyp/1.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrbyp/2.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrbyp/3.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrbyp/4.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrbyp/5.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrbyp/6.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrbyp/7.jpg')
         ],
         price: 270
     },
@@ -137,16 +140,16 @@ const apartments = [
             'Балкон: есть'
         ],
         images: [
-            '/images/apartments/telaviv/2bdr-mrpi/1.jpg',
-            '/images/apartments/telaviv/2bdr-mrpi/2.jpg',
-            '/images/apartments/telaviv/2bdr-mrpi/3.jpg',
-            '/images/apartments/telaviv/2bdr-mrpi/4.jpg',
-            '/images/apartments/telaviv/2bdr-mrpi/5.jpg',
-            '/images/apartments/telaviv/2bdr-mrpi/6.jpg',
-            '/images/apartments/telaviv/2bdr-mrpi/7.jpg',
-            '/images/apartments/telaviv/2bdr-mrpi/8.jpg',
-            '/images/apartments/telaviv/2bdr-mrpi/9.jpg',
-            '/images/apartments/telaviv/2bdr-mrpi/10.jpg'
+            imagePath('/images/apartments/telaviv/2bdr-mrpi/1.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrpi/2.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrpi/3.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrpi/4.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrpi/5.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrpi/6.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrpi/7.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrpi/8.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrpi/9.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrpi/10.jpg')
         ],
         price: 280
     }
