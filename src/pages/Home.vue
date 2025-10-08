@@ -35,9 +35,26 @@
     padding: 30px;
     margin-top: 50px;
 }
+
+@media (max-width: 768px) {
+    .overlay {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .mrg {
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+    }
+    .size-li {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+}
+
 .mrg {
     margin-bottom: 50px;
 }
+
 .size-li {
     font-size: 20px;
     margin: 30px 0;
