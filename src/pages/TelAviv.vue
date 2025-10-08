@@ -8,10 +8,11 @@
 
 <script setup>
 import ApartmentCard from '@/components/ApartmentCard.vue';
+import { imagePath } from '@/components/imagePath';
 
-function imagePath(path) {
-  return `${import.meta.env.BASE_URL}${path}`
-}
+// function imagePath(path) {
+//   return `${import.meta.env.BASE_URL}${path}`
+// }
 
 const apartments = [
     {

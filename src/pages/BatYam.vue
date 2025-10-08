@@ -8,6 +8,7 @@
 
 <script setup>
     import ApartmentCard from '@/components/ApartmentCard.vue';
+    import { imagePath } from '@/components/imagePath';
 
     const apartments = [
     {
@@ -23,16 +24,16 @@
         ],
         images: [
             imagePath('/images/apartments/batyam/2bdr-bf87/1.jpeg'),
-            '/images/apartments/batyam/2bdr-bf87/2.jpeg',
-            '/images/apartments/batyam/2bdr-bf87/3.jpeg',
-            '/images/apartments/batyam/2bdr-bf87/4.jpeg',
-            '/images/apartments/batyam/2bdr-bf87/5.jpeg',
-            '/images/apartments/batyam/2bdr-bf87/6.jpeg',
-            '/images/apartments/batyam/2bdr-bf87/7.jpeg',
-            '/images/apartments/batyam/2bdr-bf87/8.jpeg',
-            '/images/apartments/batyam/2bdr-bf87/9.jpeg',
-            '/images/apartments/batyam/2bdr-bf87/10.jpeg',
-            '/images/apartments/batyam/2bdr-bf87/11.jpeg'
+            imagePath('/images/apartments/batyam/2bdr-bf87/2.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf87/3.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf87/4.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf87/5.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf87/6.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf87/7.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf87/8.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf87/9.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf87/10.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf87/11.jpeg')
         ],
         price: 100
     },
@@ -48,12 +49,12 @@
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/batyam/1bdr-bf87/1.jpeg',
-            '/images/apartments/batyam/1bdr-bf87/2.jpeg',
-            '/images/apartments/batyam/1bdr-bf87/3.jpeg',
-            '/images/apartments/batyam/1bdr-bf87/4.jpeg',
-            '/images/apartments/batyam/1bdr-bf87/5.jpeg',
-            '/images/apartments/batyam/1bdr-bf87/6.jpeg'
+            imagePath('/images/apartments/batyam/1bdr-bf87/1.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf87/2.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf87/3.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf87/4.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf87/5.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf87/6.jpeg')
         ],
         price: 80
     },
@@ -69,15 +70,15 @@
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/batyam/1bdr-bf122/1.jpeg',
-            '/images/apartments/batyam/1bdr-bf122/2.jpeg',
-            '/images/apartments/batyam/1bdr-bf122/3.jpeg',
-            '/images/apartments/batyam/1bdr-bf122/4.jpeg',
-            '/images/apartments/batyam/1bdr-bf122/5.jpeg',
-            '/images/apartments/batyam/1bdr-bf122/6.jpeg',
-            '/images/apartments/batyam/1bdr-bf122/7.jpeg',
-            '/images/apartments/batyam/1bdr-bf122/8.jpeg',
-            '/images/apartments/batyam/1bdr-bf122/9.jpeg'
+            imagePath('/images/apartments/batyam/1bdr-bf122/1.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf122/2.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf122/3.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf122/4.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf122/5.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf122/6.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf122/7.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf122/8.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf122/9.jpeg')
         ],
         price: 90
     },
@@ -93,17 +94,17 @@
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/batyam/2bdr-bf122/1.jpeg',
-            '/images/apartments/batyam/2bdr-bf122/2.jpeg',
-            '/images/apartments/batyam/2bdr-bf122/3.jpeg',
-            '/images/apartments/batyam/2bdr-bf122/4.jpeg',
-            '/images/apartments/batyam/2bdr-bf122/5.jpeg',
-            '/images/apartments/batyam/2bdr-bf122/6.jpeg',
-            '/images/apartments/batyam/2bdr-bf122/7.jpeg',
-            '/images/apartments/batyam/2bdr-bf122/8.jpeg',
-            '/images/apartments/batyam/2bdr-bf122/9.jpeg',
-            '/images/apartments/batyam/2bdr-bf122/10.jpeg',
-            '/images/apartments/batyam/2bdr-bf122/11.jpeg'
+            imagePath('/images/apartments/batyam/2bdr-bf122/1.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf122/2.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf122/3.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf122/4.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf122/5.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf122/6.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf122/7.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf122/8.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf122/9.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf122/10.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bf122/11.jpeg')
         ],
         price: 110
     },
@@ -119,18 +120,18 @@
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/batyam/2bdr-bg5a/1.jpeg',
-            '/images/apartments/batyam/2bdr-bg5a/2.jpeg',
-            '/images/apartments/batyam/2bdr-bg5a/3.jpeg',
-            '/images/apartments/batyam/2bdr-bg5a/4.jpeg',
-            '/images/apartments/batyam/2bdr-bg5a/5.jpeg',
-            '/images/apartments/batyam/2bdr-bg5a/6.jpg',
-            '/images/apartments/batyam/2bdr-bg5a/7.jpg',
-            '/images/apartments/batyam/2bdr-bg5a/8.jpg',
-            '/images/apartments/batyam/2bdr-bg5a/9.jpeg',
-            '/images/apartments/batyam/2bdr-bg5a/10.jpeg',
-            '/images/apartments/batyam/2bdr-bg5a/11.jpeg',
-            '/images/apartments/batyam/2bdr-bg5a/12.jpeg'
+            imagePath('/images/apartments/batyam/2bdr-bg5a/1.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bg5a/2.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bg5a/3.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bg5a/4.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bg5a/5.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bg5a/6.jpg'),
+            imagePath('/images/apartments/batyam/2bdr-bg5a/7.jpg'),
+            imagePath('/images/apartments/batyam/2bdr-bg5a/8.jpg'),
+            imagePath('/images/apartments/batyam/2bdr-bg5a/9.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bg5a/10.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bg5a/11.jpeg'),
+            imagePath('/images/apartments/batyam/2bdr-bg5a/12.jpeg')
         ],
         price: 120
     },
@@ -146,15 +147,15 @@
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/batyam/1bdr-bg4a/1.jpeg',
-            '/images/apartments/batyam/1bdr-bg4a/2.jpeg',
-            '/images/apartments/batyam/1bdr-bg4a/3.jpeg',
-            '/images/apartments/batyam/1bdr-bg4a/4.jpeg',
-            '/images/apartments/batyam/1bdr-bg4a/5.jpeg',
-            '/images/apartments/batyam/1bdr-bg4a/6.jpeg',
-            '/images/apartments/batyam/1bdr-bg4a/7.jpeg',
-            '/images/apartments/batyam/1bdr-bg4a/8.jpeg',
-            '/images/apartments/batyam/1bdr-bg4a/9.jpeg'
+            imagePath('/images/apartments/batyam/1bdr-bg4a/1.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bg4a/2.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bg4a/3.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bg4a/4.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bg4a/5.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bg4a/6.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bg4a/7.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bg4a/8.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bg4a/9.jpeg')
         ],
         price: 90
     },
@@ -170,18 +171,18 @@
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/batyam/3bdr-mrg4/1.jpeg',
-            '/images/apartments/batyam/3bdr-mrg4/2.jpeg',
-            '/images/apartments/batyam/3bdr-mrg4/3.jpeg',
-            '/images/apartments/batyam/3bdr-mrg4/4.jpeg',
-            '/images/apartments/batyam/3bdr-mrg4/5.jpeg',
-            '/images/apartments/batyam/3bdr-mrg4/6.jpeg',
-            '/images/apartments/batyam/3bdr-mrg4/7.jpeg',
-            '/images/apartments/batyam/3bdr-mrg4/8.jpeg',
-            '/images/apartments/batyam/3bdr-mrg4/9.jpeg',
-            '/images/apartments/batyam/3bdr-mrg4/10.jpeg',
-            '/images/apartments/batyam/3bdr-mrg4/11.jpeg',
-            '/images/apartments/batyam/3bdr-mrg4/12.jpeg'
+            imagePath('/images/apartments/batyam/3bdr-mrg4/1.jpeg'),
+            imagePath('/images/apartments/batyam/3bdr-mrg4/2.jpeg'),
+            imagePath('/images/apartments/batyam/3bdr-mrg4/3.jpeg'),
+            imagePath('/images/apartments/batyam/3bdr-mrg4/4.jpeg'),
+            imagePath('/images/apartments/batyam/3bdr-mrg4/5.jpeg'),
+            imagePath('/images/apartments/batyam/3bdr-mrg4/6.jpeg'),
+            imagePath('/images/apartments/batyam/3bdr-mrg4/7.jpeg'),
+            imagePath('/images/apartments/batyam/3bdr-mrg4/8.jpeg'),
+            imagePath('/images/apartments/batyam/3bdr-mrg4/9.jpeg'),
+            imagePath('/images/apartments/batyam/3bdr-mrg4/10.jpeg'),
+            imagePath('/images/apartments/batyam/3bdr-mrg4/11.jpeg'),
+            imagePath('/images/apartments/batyam/3bdr-mrg4/12.jpeg')
         ],
         price: 120
     },
@@ -197,36 +198,36 @@
             'Балкон: есть'
         ],
         images: [
-            '/images/apartments/batyam/4bdr-sade/1.jpeg',
-            '/images/apartments/batyam/4bdr-sade/2.jpeg',
-            '/images/apartments/batyam/4bdr-sade/3.jpeg',
-            '/images/apartments/batyam/4bdr-sade/4.jpeg',
-            '/images/apartments/batyam/4bdr-sade/5.jpeg',
-            '/images/apartments/batyam/4bdr-sade/6.jpeg',
-            '/images/apartments/batyam/4bdr-sade/7.jpeg',
-            '/images/apartments/batyam/4bdr-sade/8.jpeg',
-            '/images/apartments/batyam/4bdr-sade/9.jpeg',
-            '/images/apartments/batyam/4bdr-sade/10.jpeg',
-            '/images/apartments/batyam/4bdr-sade/11.jpeg',
-            '/images/apartments/batyam/4bdr-sade/12.jpeg',
-            '/images/apartments/batyam/4bdr-sade/13.jpeg',
-            '/images/apartments/batyam/4bdr-sade/14.jpeg',
-            '/images/apartments/batyam/4bdr-sade/15.jpeg',
-            '/images/apartments/batyam/4bdr-sade/16.jpeg',
-            '/images/apartments/batyam/4bdr-sade/17.jpeg',
-            '/images/apartments/batyam/4bdr-sade/18.jpeg',
-            '/images/apartments/batyam/4bdr-sade/19.jpeg',
-            '/images/apartments/batyam/4bdr-sade/20.jpeg',
-            '/images/apartments/batyam/4bdr-sade/21.jpeg',
-            '/images/apartments/batyam/4bdr-sade/22.jpeg',
-            '/images/apartments/batyam/4bdr-sade/23.jpeg',
-            '/images/apartments/batyam/4bdr-sade/24.jpeg',
-            '/images/apartments/batyam/4bdr-sade/25.jpeg',
-            '/images/apartments/batyam/4bdr-sade/26.jpeg',
-            '/images/apartments/batyam/4bdr-sade/27.jpeg',
-            '/images/apartments/batyam/4bdr-sade/28.jpeg',
-            '/images/apartments/batyam/4bdr-sade/29.jpeg',
-            '/images/apartments/batyam/4bdr-sade/30.jpeg'
+            imagePath('/images/apartments/batyam/4bdr-sade/1.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/2.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/3.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/4.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/5.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/6.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/7.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/8.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/9.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/10.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/11.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/12.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/13.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/14.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/15.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/16.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/17.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/18.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/19.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/20.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/21.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/22.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/23.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/24.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/25.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/26.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/27.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/28.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/29.jpeg'),
+            imagePath('/images/apartments/batyam/4bdr-sade/30.jpeg')
         ],
         price: 300
     },
@@ -242,14 +243,14 @@
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/batyam/1bdr-bf50/1.jpeg',
-            '/images/apartments/batyam/1bdr-bf50/2.jpeg',
-            '/images/apartments/batyam/1bdr-bf50/3.jpeg',
-            '/images/apartments/batyam/1bdr-bf50/4.jpeg',
-            '/images/apartments/batyam/1bdr-bf50/5.jpeg',
-            '/images/apartments/batyam/1bdr-bf50/6.webp',
-            '/images/apartments/batyam/1bdr-bf50/7.webp',
-            '/images/apartments/batyam/1bdr-bf50/8.jpeg'
+            imagePath('/images/apartments/batyam/1bdr-bf50/1.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf50/2.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf50/3.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf50/4.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf50/5.jpeg'),
+            imagePath('/images/apartments/batyam/1bdr-bf50/6.webp'),
+            imagePath('/images/apartments/batyam/1bdr-bf50/7.webp'),
+            imagePath('/images/apartments/batyam/1bdr-bf50/8.jpeg')
         ],
         price: 80
     }

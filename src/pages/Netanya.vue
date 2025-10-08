@@ -8,7 +8,7 @@
 
 <script setup>
 import ApartmentCard from '@/components/ApartmentCard.vue';
-
+import { imagePath } from '@/components/imagePath';
 
 const apartments = [
     {
@@ -23,13 +23,13 @@ const apartments = [
             'Балкон: есть'
         ],
         images: [
-            '/images/apartments/netanya/2bdr-shb/1.jpg',
-            '/images/apartments/netanya/2bdr-shb/2.jpg',
-            '/images/apartments/netanya/2bdr-shb/3.jpg',
-            '/images/apartments/netanya/2bdr-shb/4.jpg',
-            '/images/apartments/netanya/2bdr-shb/5.jpg',
-            '/images/apartments/netanya/2bdr-shb/6.jpg',
-            '/images/apartments/netanya/2bdr-shb/7.jpg'
+            imagePath('/images/apartments/netanya/2bdr-shb/1.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-shb/2.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-shb/3.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-shb/4.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-shb/5.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-shb/6.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-shb/7.jpg')
         ],
         price: 150
     },
@@ -45,16 +45,16 @@ const apartments = [
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/netanya/2bdr-sh/1.jpg',
-            '/images/apartments/netanya/2bdr-sh/2.jpg',
-            '/images/apartments/netanya/2bdr-sh/3.jpg',
-            '/images/apartments/netanya/2bdr-sh/4.jpg',
-            '/images/apartments/netanya/2bdr-sh/5.jpg',
-            '/images/apartments/netanya/2bdr-sh/6.jpg',
-            '/images/apartments/netanya/2bdr-sh/7.jpg',
-            '/images/apartments/netanya/2bdr-sh/8.jpg',
-            '/images/apartments/netanya/2bdr-sh/9.jpg',
-            '/images/apartments/netanya/2bdr-sh/10.jpg'
+            imagePath('/images/apartments/netanya/2bdr-sh/1.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-sh/2.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-sh/3.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-sh/4.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-sh/5.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-sh/6.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-sh/7.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-sh/8.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-sh/9.jpg'),
+            imagePath('/images/apartments/netanya/2bdr-sh/10.jpg')
         ],
         price: 140
     },
@@ -70,13 +70,13 @@ const apartments = [
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/netanya/1bdr-sh/1.jpg',
-            '/images/apartments/netanya/1bdr-sh/2.jpg',
-            '/images/apartments/netanya/1bdr-sh/3.jpg',
-            '/images/apartments/netanya/1bdr-sh/4.jpg',
-            '/images/apartments/netanya/1bdr-sh/5.jpg',
-            '/images/apartments/netanya/1bdr-sh/6.jpg',
-            '/images/apartments/netanya/1bdr-sh/7.jpg'
+            imagePath('/images/apartments/netanya/1bdr-sh/1.jpg'),
+            imagePath('/images/apartments/netanya/1bdr-sh/2.jpg'),
+            imagePath('/images/apartments/netanya/1bdr-sh/3.jpg'),
+            imagePath('/images/apartments/netanya/1bdr-sh/4.jpg'),
+            imagePath('/images/apartments/netanya/1bdr-sh/5.jpg'),
+            imagePath('/images/apartments/netanya/1bdr-sh/6.jpg'),
+            imagePath('/images/apartments/netanya/1bdr-sh/7.jpg')
         ],
         price: 110
     },
@@ -92,17 +92,17 @@ const apartments = [
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/netanya/3bdr-mc11/1.jpeg',
-            '/images/apartments/netanya/3bdr-mc11/2.jpeg',
-            '/images/apartments/netanya/3bdr-mc11/3.jpeg',
-            '/images/apartments/netanya/3bdr-mc11/4.jpeg',
-            '/images/apartments/netanya/3bdr-mc11/5.jpeg',
-            '/images/apartments/netanya/3bdr-mc11/6.jpeg',
-            '/images/apartments/netanya/3bdr-mc11/7.jpeg',
-            '/images/apartments/netanya/3bdr-mc11/8.jpeg',
-            '/images/apartments/netanya/3bdr-mc11/9.jpeg',
-            '/images/apartments/netanya/3bdr-mc11/10.jpeg',
-            '/images/apartments/netanya/3bdr-mc11/11.jpeg'
+            imagePath('/images/apartments/netanya/3bdr-mc11/1.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc11/2.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc11/3.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc11/4.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc11/5.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc11/6.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc11/7.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc11/8.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc11/9.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc11/10.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc11/11.jpeg')
         ],
         price: 220
     },
@@ -118,16 +118,16 @@ const apartments = [
             'Балкон: есть'
         ],
         images: [
-            '/images/apartments/netanya/4bdr-shlmel/1.jpeg',
-            '/images/apartments/netanya/4bdr-shlmel/2.jpeg',
-            '/images/apartments/netanya/4bdr-shlmel/3.jpeg',
-            '/images/apartments/netanya/4bdr-shlmel/4.jpeg',
-            '/images/apartments/netanya/4bdr-shlmel/5.jpeg',
-            '/images/apartments/netanya/4bdr-shlmel/6.jpeg',
-            '/images/apartments/netanya/4bdr-shlmel/7.jpeg',
-            '/images/apartments/netanya/4bdr-shlmel/8.jpeg',
-            '/images/apartments/netanya/4bdr-shlmel/9.jpeg',
-            '/images/apartments/netanya/4bdr-shlmel/10.jpeg'
+            imagePath('/images/apartments/netanya/4bdr-shlmel/1.jpeg'),
+            imagePath('/images/apartments/netanya/4bdr-shlmel/2.jpeg'),
+            imagePath('/images/apartments/netanya/4bdr-shlmel/3.jpeg'),
+            imagePath('/images/apartments/netanya/4bdr-shlmel/4.jpeg'),
+            imagePath('/images/apartments/netanya/4bdr-shlmel/5.jpeg'),
+            imagePath('/images/apartments/netanya/4bdr-shlmel/6.jpeg'),
+            imagePath('/images/apartments/netanya/4bdr-shlmel/7.jpeg'),
+            imagePath('/images/apartments/netanya/4bdr-shlmel/8.jpeg'),
+            imagePath('/images/apartments/netanya/4bdr-shlmel/9.jpeg'),
+            imagePath('/images/apartments/netanya/4bdr-shlmel/10.jpeg')
         ],
         price: 300
     },
@@ -143,13 +143,13 @@ const apartments = [
             'Балкон: нет'
         ],
         images: [
-            '/images/apartments/netanya/1bdr-crm/1.jpg',
-            '/images/apartments/netanya/1bdr-crm/2.jpg',
-            '/images/apartments/netanya/1bdr-crm/3.jpg',
-            '/images/apartments/netanya/1bdr-crm/4.jpg',
-            '/images/apartments/netanya/1bdr-crm/5.jpg',
-            '/images/apartments/netanya/1bdr-crm/6.jpg',
-            '/images/apartments/netanya/1bdr-crm/7.jpg'
+            imagePath('/images/apartments/netanya/1bdr-crm/1.jpg'),
+            imagePath('/images/apartments/netanya/1bdr-crm/2.jpg'),
+            imagePath('/images/apartments/netanya/1bdr-crm/3.jpg'),
+            imagePath('/images/apartments/netanya/1bdr-crm/4.jpg'),
+            imagePath('/images/apartments/netanya/1bdr-crm/5.jpg'),
+            imagePath('/images/apartments/netanya/1bdr-crm/6.jpg'),
+            imagePath('/images/apartments/netanya/1bdr-crm/7.jpg')
         ],
         price: 150
     },
@@ -165,17 +165,17 @@ const apartments = [
             'Балкон: есть'
         ],
         images: [
-            '/images/apartments/netanya/2bdr-op/1.jpeg',
-            '/images/apartments/netanya/2bdr-op/2.jpeg',
-            '/images/apartments/netanya/2bdr-op/3.jpeg',
-            '/images/apartments/netanya/2bdr-op/4.jpeg',
-            '/images/apartments/netanya/2bdr-op/5.jpeg',
-            '/images/apartments/netanya/2bdr-op/6.jpeg',
-            '/images/apartments/netanya/2bdr-op/7.jpeg',
-            '/images/apartments/netanya/2bdr-op/8.jpeg',
-            '/images/apartments/netanya/2bdr-op/9.jpeg',
-            '/images/apartments/netanya/2bdr-op/10.jpeg',
-            '/images/apartments/netanya/2bdr-op/11.jpeg'
+            imagePath('/images/apartments/netanya/2bdr-op/1.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-op/2.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-op/3.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-op/4.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-op/5.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-op/6.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-op/7.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-op/8.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-op/9.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-op/10.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-op/11.jpeg')
         ],
         price: 210
     },
@@ -191,18 +191,18 @@ const apartments = [
             'Балкон: есть'
         ],
         images: [
-            '/images/apartments/netanya/2bdr-gdmhs/1.jpeg',
-            '/images/apartments/netanya/2bdr-gdmhs/2.jpeg',
-            '/images/apartments/netanya/2bdr-gdmhs/3.jpeg',
-            '/images/apartments/netanya/2bdr-gdmhs/4.jpeg',
-            '/images/apartments/netanya/2bdr-gdmhs/5.jpeg',
-            '/images/apartments/netanya/2bdr-gdmhs/6.jpeg',
-            '/images/apartments/netanya/2bdr-gdmhs/7.jpeg',
-            '/images/apartments/netanya/2bdr-gdmhs/8.jpeg',
-            '/images/apartments/netanya/2bdr-gdmhs/9.jpeg',
-            '/images/apartments/netanya/2bdr-gdmhs/10.jpeg',
-            '/images/apartments/netanya/2bdr-gdmhs/11.jpeg',
-            '/images/apartments/netanya/2bdr-gdmhs/12.jpeg'
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/1.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/2.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/3.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/4.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/5.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/6.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/7.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/8.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/9.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/10.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/11.jpeg'),
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/12.jpeg')
         ],
         price: 200
     },
@@ -218,25 +218,25 @@ const apartments = [
             'Балкон: есть'
         ],
         images: [
-            '/images/apartments/netanya/3bdr-mc14/1.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/2.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/3.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/4.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/5.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/6.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/7.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/8.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/9.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/10.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/11.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/12.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/13.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/14.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/15.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/16.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/17.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/18.jpeg',
-            '/images/apartments/netanya/3bdr-mc14/19.jpeg'
+            imagePath('/images/apartments/netanya/3bdr-mc14/1.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/2.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/3.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/4.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/5.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/6.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/7.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/8.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/9.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/10.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/11.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/12.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/13.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/14.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/15.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/16.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/17.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/18.jpeg'),
+            imagePath('/images/apartments/netanya/3bdr-mc14/19.jpeg')
         ],
         price: 180
     }
