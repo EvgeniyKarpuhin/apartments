@@ -34,16 +34,20 @@ function toggleMenu() {
       <div v-if="menuOpen" class="mobile-menu">
         <button class="close" @click="toggleMenu">✖</button>
         <nav>
-          <a href="/" @click="toggleMenu"></a>
-          <a href="/telaviv" @click="toggleMenu">Тель Авив</a>
-          <a href="/netanya" @click="toggleMenu">Нетания</a>
-          <a href="/batyam" @click="toggleMenu">Бат Ям</a>
-          <a href="/hotels" @click="toggleMenu">Отели</a>
+          <router-link to="/" @click="toggleMenu"></router-link>
+          <router-link to="/telaviv" @click="toggleMenu">Тель Авив</router-link>
+          <router-link to="/netanya" @click="toggleMenu">Нетания</router-link>
+          <router-link to="/batyam" @click="toggleMenu">Бат Ям</router-link>
+          <router-link to="/hotels" @click="toggleMenu">Отели</router-link>
         </nav>
       </div>
     </header>
 
-  <RouterView />
+    <main>
+      <RouterView />
+    </main>
+
+  
   
 </template>
 
