@@ -23,8 +23,8 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
-  if(isMobile && to.path === '/apartments/') {
-    next('/apartments/mobile')
+  if(isMobile && to.path === 'Home') {
+    next({name: 'MobileHome'})
   } else {
     next()
   }
