@@ -4,10 +4,12 @@ import TelAviv from '../pages/TelAviv.vue'
 import Netanya from '../pages/Netanya.vue'
 import BatYam from '../pages/BatYam.vue'
 import Hotels from '../pages/Hotels.vue'
+import MobileHome from '../pages/MobileHome.vue'
 
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
+  { path: '/mobile', name: 'MobileHome', component: MobileHome },
   { path: '/telaviv', name: 'TelAviv', component: TelAviv },
   { path: '/netanya', name: 'Netanya', component: Netanya },
   { path: '/batyam', name: 'BatYam', component: BatYam },
@@ -17,6 +19,15 @@ const routes = [
 const router = createRouter({
   history: createWebHistory('/apartments/'),
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+  if(isMobile && to.path === '/apartments/') {
+    next('/apartments/mobile')
+  } else {
+    next()
+  }
 })
 
 export default router
