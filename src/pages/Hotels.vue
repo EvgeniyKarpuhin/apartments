@@ -278,7 +278,7 @@ function closeModal() {
 
 .modal-content {
     position: relative;
-    max-width: 40vw;
+    /* max-width: 40vw; */
     max-height: 90vh;
     border-radius: 12px;
     overflow: hidden;
