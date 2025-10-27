@@ -353,6 +353,83 @@ const apartments = [
         ],
         price: 270
     },
+    {
+        id: 16,
+        title: 'Трёхкомнатная квартира',
+        description: [
+            'Планировка: 2 спальни + зал с кухней',
+            'Количество человек: до 4',
+            'Расстояние до пляжа: 200 метров',
+            'Площадь: 60 кв.м.',
+            'Санузел: 1',
+            'Балкон: нет'
+        ],
+        images: [
+            imagePath('/images/apartments/telaviv/2bdr-mrallness/1.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrallness/2.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrallness/3.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrallness/4.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrallness/5.jpg'),
+            imagePath('/images/apartments/telaviv/2bdr-mrallness/6.jpg')
+        ],
+        price: 250
+    },
+    {
+        id: 17,
+        title: 'Четырёхкомнатная квартира',
+        description: [
+            'Планировка: 3 спальни + зал с кухней',
+            'Количество человек: до 8',
+            'Расстояние до пляжа: 550 метров',
+            'Площадь: 120 кв.м.',
+            'Санузел: 2',
+            'Балкон: есть'
+        ],
+        images: [
+            imagePath('/images/apartments/telaviv/3bdr-mryav/1.jpg'),
+            imagePath('/images/apartments/telaviv/3bdr-mryav/2.jpg'),
+            imagePath('/images/apartments/telaviv/3bdr-mryav/3.jpg'),
+            imagePath('/images/apartments/telaviv/3bdr-mryav/4.jpg'),
+            imagePath('/images/apartments/telaviv/3bdr-mryav/5.jpg'),
+            imagePath('/images/apartments/telaviv/3bdr-mryav/6.jpg'),
+            imagePath('/images/apartments/telaviv/3bdr-mryav/7.jpg'),
+            imagePath('/images/apartments/telaviv/3bdr-mryav/8.jpg'),
+            imagePath('/images/apartments/telaviv/3bdr-mryav/9.jpg'),
+            imagePath('/images/apartments/telaviv/3bdr-mryav/10.jpg'),
+            imagePath('/images/apartments/telaviv/3bdr-mryav/11.jpg')
+        ],
+        price: 330
+    },
+    {
+        id: 18,
+        title: 'Пятикомнатная квартира',
+        description: [
+            'Планировка: 4 спальни + зал с кухней',
+            'Количество человек: до 10',
+            'Расстояние до пляжа: 600 метров',
+            'Площадь: 140 кв.м.',
+            'Санузел: 3',
+            'Балкон: есть'
+        ],
+        images: [
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/1.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/2.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/3.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/4.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/5.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/6.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/7.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/8.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/9.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/10.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/11.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/12.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/13.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/14.jpg'),
+            imagePath('/images/apartments/telaviv/4bdr-mrpid/15.jpg')
+        ],
+        price: 700
+    }
 ]
 </script>
 
