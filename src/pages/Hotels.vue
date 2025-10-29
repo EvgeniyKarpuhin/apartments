@@ -278,8 +278,7 @@ function closeModal() {
 
 .modal-content {
     position: relative;
-    /* max-width: 40vw; */
-    max-height: 90vh;
+    height: 100%;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -296,8 +295,8 @@ function closeModal() {
 }
 
 .modal-content img {
-    max-width: 100%;
-    max-height: 90vh;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
 }
 
