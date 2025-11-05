@@ -45,10 +45,10 @@ const hotels = ref([
         description: 'Один из самых известных отелей в городе, удобно расположен на морском побережье. Из отеля открывается вид на Средиземное море. К услугам гостей терраса для загара с видом на пляж и большим открытым бассейном.',
         price: 500,
         images: [
-            imagePath('/images/hotels/telaviv/dan/11843033.jpg'),
-            imagePath('/images/hotels/telaviv/dan/183827187.jpg'),
-            imagePath('/images/hotels/telaviv/dan/183827178.jpg'),
-            imagePath('/images/hotels/telaviv/dan/183827199.jpg')
+            imagePath('/images/hotels/telaviv/dan/11843033.webp'),
+            imagePath('/images/hotels/telaviv/dan/183827187.webp'),
+            imagePath('/images/hotels/telaviv/dan/183827178.webp'),
+            imagePath('/images/hotels/telaviv/dan/183827199.webp')
             
         ]
     },
@@ -57,10 +57,10 @@ const hotels = ref([
         description: 'Отель расположен на набережной, между улицами Ха-Яркон и Герберт Самуэль. К услугам гостей открытый бассейн, ресторан с обслуживанием по меню, бар, оздоровительный центр и спа-салон, представительский лаундж и фитнес-центр.',
         price: 300,
         images: [
-            imagePath('/images/hotels/telaviv/royal/1.jpg'),
-            imagePath('/images/hotels/telaviv/royal/2.jpg'),
-            imagePath('/images/hotels/telaviv/royal/3.jpg'),
-            imagePath('/images/hotels/telaviv/royal/4.jpg')
+            imagePath('/images/hotels/telaviv/royal/1.webp'),
+            imagePath('/images/hotels/telaviv/royal/2.webp'),
+            imagePath('/images/hotels/telaviv/royal/3.webp'),
+            imagePath('/images/hotels/telaviv/royal/4.webp')
         ]
     },
     {
@@ -68,11 +68,11 @@ const hotels = ref([
         description: 'Отель 5 звезд на первой линии города Тель-Авив. В распоряжении гостей бесплатные велосипеды, открытый бассейн, фитнес-центр, терраса, ресторан и бар. Можно воспользоваться трансфером от/до аэропорта или доставкой еды и напитков.',
         price: 600,
         images: [
-            imagePath('/images/hotels/telaviv/kempinski/1.jpg'),
-            imagePath('/images/hotels/telaviv/kempinski/2.jpg'),
-            imagePath('/images/hotels/telaviv/kempinski/3.jpg'),
-            imagePath('/images/hotels/telaviv/kempinski/4.jpg'),
-            imagePath('/images/hotels/telaviv/kempinski/5.jpg')
+            imagePath('/images/hotels/telaviv/kempinski/1.webp'),
+            imagePath('/images/hotels/telaviv/kempinski/2.webp'),
+            imagePath('/images/hotels/telaviv/kempinski/3.webp'),
+            imagePath('/images/hotels/telaviv/kempinski/4.webp'),
+            imagePath('/images/hotels/telaviv/kempinski/5.webp')
         ]
     },
     {
@@ -80,10 +80,10 @@ const hotels = ref([
         description: 'Отель расположен всего в нескольких шагах от прекрасного пляжа, недалеко от модного порта и торговых районов Тель-Авива. К услугам гостей современные номера с бесплатным Wi-Fi. Неподалеку находятся рестораны и клубы.',
         price: 300,
         images: [
-            imagePath('/images/hotels/telaviv/tal/1.jpg'),
-            imagePath('/images/hotels/telaviv/tal/2.jpg'),
-            imagePath('/images/hotels/telaviv/tal/3.jpg'),
-            imagePath('/images/hotels/telaviv/tal/4.jpg')
+            imagePath('/images/hotels/telaviv/tal/1.webp'),
+            imagePath('/images/hotels/telaviv/tal/2.webp'),
+            imagePath('/images/hotels/telaviv/tal/3.webp'),
+            imagePath('/images/hotels/telaviv/tal/4.webp')
         ]
     },
     {
@@ -91,10 +91,10 @@ const hotels = ref([
         description: 'Отель расположен в центре Тель-Авива, всего в 3 минутах ходьбы от песчаного пляжа. С великолепной террасы на крыше отеля открывается вид на городской пейзаж и Средиземное море. В районе открыты многочисленные рестораны и магазины.',
         price: 300,
         images: [
-            imagePath('/images/hotels/telaviv/mel/1.jpg'),
-            imagePath('/images/hotels/telaviv/mel/2.jpg'),
-            imagePath('/images/hotels/telaviv/mel/3.jpg'),
-            imagePath('/images/hotels/telaviv/mel/4.jpg')
+            imagePath('/images/hotels/telaviv/mel/1.webp'),
+            imagePath('/images/hotels/telaviv/mel/2.webp'),
+            imagePath('/images/hotels/telaviv/mel/3.webp'),
+            imagePath('/images/hotels/telaviv/mel/4.webp')
         ]
     },
     {
@@ -102,11 +102,11 @@ const hotels = ref([
         description: 'Отель находится в нескольких шагах от пляжа. К услугам гостей лаундж на крыше с видом на город и Средиземное море. Отель расположен в 10 минутах ходьбы от торгового района Тель-Авива. Прогулка до порта Тель-Авива займет 5 минут.',
         price: 300,
         images: [
-            imagePath('/images/hotels/telaviv/shlm/1.jpg'),
-            imagePath('/images/hotels/telaviv/shlm/2.jpg'),
-            imagePath('/images/hotels/telaviv/shlm/3.jpg'),
-            imagePath('/images/hotels/telaviv/shlm/4.jpg'),
-            imagePath('/images/hotels/telaviv/shlm/5.jpg')
+            imagePath('/images/hotels/telaviv/shlm/1.webp'),
+            imagePath('/images/hotels/telaviv/shlm/2.webp'),
+            imagePath('/images/hotels/telaviv/shlm/3.webp'),
+            imagePath('/images/hotels/telaviv/shlm/4.webp'),
+            imagePath('/images/hotels/telaviv/shlm/5.webp')
         ]
     },
     {
@@ -114,10 +114,10 @@ const hotels = ref([
         description: 'Отель расположен в районе пристани для яхт, над торговым центром Arena. Из бассейна на крыше открывается вид на океан. К услугам гостей элегантные номера, оздоровительный и спа-центр, бесплатный Wi-Fi, а также различные рестораны и бары на территории отеля. Все номера выходят на балкон с видом на Средиземное море. ',
         price: 600,
         images: [
-            imagePath('/images/hotels/herzliya/ritz/1.jpg'),
-            imagePath('/images/hotels/herzliya/ritz/2.jpg'),
-            imagePath('/images/hotels/herzliya/ritz/3.jpg'),
-            imagePath('/images/hotels/herzliya/ritz/4.jpg')
+            imagePath('/images/hotels/herzliya/ritz/1.webp'),
+            imagePath('/images/hotels/herzliya/ritz/2.webp'),
+            imagePath('/images/hotels/herzliya/ritz/3.webp'),
+            imagePath('/images/hotels/herzliya/ritz/4.webp')
         ]
     },
     {
@@ -125,10 +125,10 @@ const hotels = ref([
         description: 'Отель Dan Accadia расположен прямо на песчаном пляже в городе Герцлия. К услугам гостей этого роскошного отеля современные номера, превосходные удобства для отдыха и большой выбор ресторанов. Отель Dan Accadia Herzliya расположен на пляже в нескольких минутах ходьбы от набережной города.',
         price: 400,
         images: [
-            imagePath('/images/hotels/herzliya/dan/1.jpg'),
-            imagePath('/images/hotels/herzliya/dan/2.jpg'),
-            imagePath('/images/hotels/herzliya/dan/3.jpg'),
-            imagePath('/images/hotels/herzliya/dan/4.jpg')
+            imagePath('/images/hotels/herzliya/dan/1.webp'),
+            imagePath('/images/hotels/herzliya/dan/2.webp'),
+            imagePath('/images/hotels/herzliya/dan/3.webp'),
+            imagePath('/images/hotels/herzliya/dan/4.webp')
         ]
     },
     {
@@ -136,10 +136,10 @@ const hotels = ref([
         description: 'Отель с открытым бассейном и садом расположен на побережье города Герцлия. К услугам гостей тренажерный зал, бесплатный Wi-Fi и бесплатная парковка. При отеле работают бар и ресторан, где подают фирменные блюда местной кухни. Отель расположен у пристани и побережья Герцлии.',
         price: 250,
         images: [
-            imagePath('/images/hotels/herzliya/hrds/1.jpg'),
-            imagePath('/images/hotels/herzliya/hrds/2.jpg'),
-            imagePath('/images/hotels/herzliya/hrds/3.jpg'),
-            imagePath('/images/hotels/herzliya/hrds/4.jpg')
+            imagePath('/images/hotels/herzliya/hrds/1.webp'),
+            imagePath('/images/hotels/herzliya/hrds/2.webp'),
+            imagePath('/images/hotels/herzliya/hrds/3.webp'),
+            imagePath('/images/hotels/herzliya/hrds/4.webp')
         ]
     },
     {
@@ -147,10 +147,10 @@ const hotels = ref([
         description: 'Отель с панорамным видом на Средиземное море расположен в центре Нетании, всего в 150 метрах от пляжа. К услугам гостей спа-центр, ресторан с модным баром, а также элегантно обставленные номера.',
         price: 230,
         images: [
-            imagePath('/images/hotels/netanya/david/1.jpg'),
-            imagePath('/images/hotels/netanya/david/2.jpg'),
-            imagePath('/images/hotels/netanya/david/3.jpg'),
-            imagePath('/images/hotels/netanya/david/4.jpg')
+            imagePath('/images/hotels/netanya/david/1.webp'),
+            imagePath('/images/hotels/netanya/david/2.webp'),
+            imagePath('/images/hotels/netanya/david/3.webp'),
+            imagePath('/images/hotels/netanya/david/4.webp')
         ]
     },
     {
@@ -158,10 +158,10 @@ const hotels = ref([
         description: 'Тридцатиэтажный отель расположен в городе Нетания. К услугам гостей плавательный бассейн и очень просторные люксы с большим балконом, откуда открывается вид на Средиземное море.',
         price: 240,
         images: [
-            imagePath('/images/hotels/netanya/island/1.jpg'),
-            imagePath('/images/hotels/netanya/island/2.jpg'),
-            imagePath('/images/hotels/netanya/island/3.jpg'),
-            imagePath('/images/hotels/netanya/island/4.jpg')
+            imagePath('/images/hotels/netanya/island/1.webp'),
+            imagePath('/images/hotels/netanya/island/2.webp'),
+            imagePath('/images/hotels/netanya/island/3.webp'),
+            imagePath('/images/hotels/netanya/island/4.webp')
         ]
     },
     {
@@ -169,10 +169,10 @@ const hotels = ref([
         description: 'Отель с бесплатным WiFi расположен в Нетании, в 200 м от пляжа Сизон и в 5 минутах ходьбы от пляжа Тамбона. К услугам гостей ресторан и бесплатная парковка на территории.',
         price: 220,
         images: [
-            imagePath('/images/hotels/netanya/medi/1.jpg'),
-            imagePath('/images/hotels/netanya/medi/2.jpg'),
-            imagePath('/images/hotels/netanya/medi/3.jpg'),
-            imagePath('/images/hotels/netanya/medi/4.jpg')
+            imagePath('/images/hotels/netanya/medi/1.webp'),
+            imagePath('/images/hotels/netanya/medi/2.webp'),
+            imagePath('/images/hotels/netanya/medi/3.webp'),
+            imagePath('/images/hotels/netanya/medi/4.webp')
         ]
     },
     {
@@ -180,10 +180,10 @@ const hotels = ref([
         description: 'Отель расположен в Нетании, в 350 метрах от песчаного пляжа на берегу Средиземного моря. К услугам гостей сезонный открытый бассейн с солнечной террасой.',
         price: 220,
         images: [
-            imagePath('/images/hotels/netanya/leo/1.jpg'),
-            imagePath('/images/hotels/netanya/leo/2.jpg'),
-            imagePath('/images/hotels/netanya/leo/3.jpg'),
-            imagePath('/images/hotels/netanya/leo/4.jpg')
+            imagePath('/images/hotels/netanya/leo/1.webp'),
+            imagePath('/images/hotels/netanya/leo/2.webp'),
+            imagePath('/images/hotels/netanya/leo/3.webp'),
+            imagePath('/images/hotels/netanya/leo/4.webp')
         ]
     },
     {
@@ -191,10 +191,10 @@ const hotels = ref([
         description: 'Отель с видом на популярный пляж Сиронит расположен в самом центре Нетании. К услугам гостей современные номера с видом на Средиземное море.',
         price: 130,
         images: [
-            imagePath('/images/hotels/netanya/res/1.jpg'),
-            imagePath('/images/hotels/netanya/res/2.jpg'),
-            imagePath('/images/hotels/netanya/res/3.jpg'),
-            imagePath('/images/hotels/netanya/res/4.jpg')
+            imagePath('/images/hotels/netanya/res/1.webp'),
+            imagePath('/images/hotels/netanya/res/2.webp'),
+            imagePath('/images/hotels/netanya/res/3.webp'),
+            imagePath('/images/hotels/netanya/res/4.webp')
         ]
     },
     {
@@ -202,10 +202,10 @@ const hotels = ref([
         description: 'Отель расположен на берегу моря в Нетании. Лифт рядом с отелем доставит гостей до пляжа. В отеле есть ресторан, бар и круглосуточная стойка регистрации.',
         price: 110,
         images: [
-            imagePath('/images/hotels/netanya/margoa/1.jpg'),
-            imagePath('/images/hotels/netanya/margoa/2.jpg'),
-            imagePath('/images/hotels/netanya/margoa/3.jpg'),
-            imagePath('/images/hotels/netanya/margoa/4.jpg')
+            imagePath('/images/hotels/netanya/margoa/1.webp'),
+            imagePath('/images/hotels/netanya/margoa/2.webp'),
+            imagePath('/images/hotels/netanya/margoa/3.webp'),
+            imagePath('/images/hotels/netanya/margoa/4.webp')
         ]
     }
 ])
