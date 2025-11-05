@@ -1,19 +1,6 @@
 <template>
   <div v-if="isMobile">
     <MobileHome />
-    <!-- <div class="mobile-home">
-      <h1>Выберите город</h1>
-      <div class="cities">
-        <div
-          v-for="city in cities"
-          :key="city.name"
-          class="city-block"
-          @click="goToCity(city.link)"
-        >
-          <p>{{ city.name }}</p>
-        </div>
-      </div>
-    </div> -->
   </div>
   <div v-else>
     <About />
@@ -22,28 +9,10 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-// import { useRouter } from 'vue-router';
 import About from './About.vue';
 import MobileHome from './MobileHome.vue';
 
 const isMobile = ref(window.innerWidth < 1024)
-// const menuOpen = ref(false)
-// const router = useRouter()
-
-// function toggleMenu() {
-//   menuOpen.value = !menuOpen.value
-// }
-
-// const cities = [
-//   { name: 'Тель-Авив', link: '/telaviv', image: '/images/telaviv.jpg' },
-//   { name: 'Бат-Ям', link: '/batyam', image: '/images/batyam.jpg' },
-//   { name: 'Нетания', link: '/netanya', image: '/images/netanya.jpg' },
-//   { name: 'Отели', link: '/hotels', image: '/images/hotels.jpg' },
-// ]
-
-// const goToCity = (link) => {
-//   router.push(link)
-// }
 
 const handleResize = () => {
   isMobile.value = window.innerWidth < 770

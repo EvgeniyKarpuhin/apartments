@@ -154,8 +154,10 @@ button {
 
 .modal-content {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  max-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
