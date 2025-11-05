@@ -201,8 +201,7 @@ const apartments = [
             imagePath('/images/apartments/netanya/2bdr-gdmhs/8.webp'),
             imagePath('/images/apartments/netanya/2bdr-gdmhs/9.webp'),
             imagePath('/images/apartments/netanya/2bdr-gdmhs/10.webp'),
-            imagePath('/images/apartments/netanya/2bdr-gdmhs/11.webp'),
-            imagePath('/images/apartments/netanya/2bdr-gdmhs/12.webp')
+            imagePath('/images/apartments/netanya/2bdr-gdmhs/11.webp')
         ],
         price: 200
     },
