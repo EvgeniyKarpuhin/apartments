@@ -27,11 +27,12 @@
             <swiper-slide v-for="(img, index) in apartment.images" :key="index">
               <div class="slide-content">
                 <img v-lazy :data-src="img" alt="Увеличенное фото">
+                <button class="close-button" @click="closeModal">✖</button>
               </div>
             </swiper-slide>
           </swiper>
         </div>
-        <button class="close-button" @click="closeModal">✖</button>
+        
       </div>
     </div>
   </div>
@@ -156,8 +157,7 @@ button {
   position: relative;
   width: 100%;
   max-width: 1000px;
-  height: auto;
-  max-height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,6 +173,13 @@ button {
   height: 100%;
 }
 
+.slide-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal-swiper :deep(.swiper-slide) {
   display: flex;
   align-items: center;
@@ -182,14 +189,13 @@ button {
 .modal-content img {
   width: 100%;
   height: 100%;
-  height: auto;
   border-radius: 8px;
   object-fit: contain;
 }
 
 .close-button {
   position: absolute;
-  top: -5px;
+  top: 0;
   right: 10px;
   border: none;
   border-radius: 50%;
