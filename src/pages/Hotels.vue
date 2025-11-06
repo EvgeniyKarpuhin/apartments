@@ -1,7 +1,7 @@
 <template>
     <div class="hotel-list">
         <div class="hotel-card" v-for="(hotel, index) in hotels" :key="index">
-            <img :src="hotel.images[0]" :alt="hotel.name" @click="openModal(hotel)" />
+            <img v-lazy :data-src="hotel.images[0]" :alt="hotel.name" @click="openModal(hotel)" />
             <div class="info">
                 <h3>{{ hotel.name }}</h3>
                 <p class="desc">{{ hotel.description }}</p>
@@ -19,7 +19,7 @@
                 >
                     <swiper-slide v-for="(img, i) in currentHotel.images" :key="i">
                         <div class="slide-content">
-                            <img :src="img" :alt="currentHotel.name" />
+                            <img v-lazy :data-src="img" :alt="currentHotel.name" />
                         </div>
                     </swiper-slide>
                 </swiper>

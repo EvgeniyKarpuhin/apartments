@@ -7,7 +7,7 @@
         class="mySwiper"
       >
         <swiper-slide v-for="(img, index) in apartment.images" :key="index" @click="openModal(index)">
-          <img :src="img" alt="Фото квартиры" class="image" />
+          <img v-lazy :data-src="img" alt="Фото квартиры" class="image" />
         </swiper-slide>
       </swiper>
     <div class="info">
@@ -26,7 +26,7 @@
           <swiper :modules="[Navigation]" :slides-per-view="1" navigation :initial-slide="currentIndex" class="modal-swiper">
             <swiper-slide v-for="(img, index) in apartment.images" :key="index">
               <div class="slide-content">
-                <img :src="img" alt="Увеличенное фото">
+                <img v-lazy :data-src="img" alt="Увеличенное фото">
               </div>
             </swiper-slide>
           </swiper>
