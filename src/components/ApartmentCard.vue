@@ -1,15 +1,20 @@
 <template>
-    <div class="apartment-card">
-      <swiper :modules="[ Autoplay ]" 
-        :slides-per-view="1" 
-        :loop="true"
-        :autoplay="{ delay: 3000, disableOnInteraction: false }" 
-        class="mySwiper"
+  <div class="apartment-card">
+    <swiper 
+      :modules="[Autoplay]" 
+      :slides-per-view="1" 
+      :loop="true"
+      :autoplay="{ delay: 3000, disableOnInteraction: false }" 
+      class="mySwiper"
+    >
+      <swiper-slide 
+        v-for="(img, index) in apartment.images" 
+        :key="index" 
+        @click="openModal(index)"
       >
-        <swiper-slide v-for="(img, index) in apartment.images" :key="index" @click="openModal(index)">
-          <img v-lazy :data-src="img" alt="Фото квартиры" class="image" />
-        </swiper-slide>
-      </swiper>
+        <img v-lazy :data-src="img" alt="Фото квартиры" class="image" />
+      </swiper-slide>
+    </swiper>
     <div class="info">
       <h3 class="fw">{{ apartment.title }}</h3>
       <ul>
@@ -23,7 +28,8 @@
     <div v-if="modalVisible" class="modal-overlay" @click.self="closeModal">
       <div class="modal-content">
         <div class="modal-swiper-wrapper">
-          <swiper :modules="[Navigation]" :slides-per-view="1" navigation :initial-slide="currentIndex" class="modal-swiper">
+          <swiper :modules="[Navigation]" :slides-per-view="1" navigation :initial-slide="currentIndex"
+            class="modal-swiper">
             <swiper-slide v-for="(img, index) in apartment.images" :key="index">
               <div class="slide-content">
                 <img v-lazy :data-src="img" alt="Увеличенное фото">
@@ -32,7 +38,6 @@
             </swiper-slide>
           </swiper>
         </div>
-        
       </div>
     </div>
   </div>
@@ -47,8 +52,8 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-const { apartment } = defineProps ({
-    apartment: Object
+const { apartment } = defineProps({
+  apartment: Object
 })
 
 const modalVisible = ref(false)
@@ -65,13 +70,13 @@ function closeModal() {
 </script>
 
 <style scoped>
-
 .swiper {
   width: 100%;
   height: 300px;
   border-radius: 8px;
   overflow: hidden;
 }
+
 .swiper-slide {
   height: 100%;
   display: flex;
@@ -85,6 +90,7 @@ function closeModal() {
   object-fit: cover;
   border-radius: 8px;
 }
+
 .apartment-card {
   display: flex;
   flex-direction: column;
@@ -92,7 +98,7 @@ function closeModal() {
   border-radius: 12px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   max-width: 350px;
 }
 
@@ -146,7 +152,7 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +208,7 @@ button {
   font-size: 1.2rem;
   cursor: pointer;
   padding: 0.25rem 0.6rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
 
@@ -215,7 +221,7 @@ button {
   font-size: 1.5rem;
   padding: 0.5rem 0.75rem;
   cursor: pointer;
-  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 .nav-button.prev {

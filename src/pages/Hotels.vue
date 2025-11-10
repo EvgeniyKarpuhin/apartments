@@ -1,45 +1,14 @@
 <template>
     <div class="hotel-list">
-        <div class="hotel-card" v-for="(hotel, index) in hotels" :key="index">
-            <img v-lazy :data-src="hotel.images[0]" :alt="hotel.name" @click="openModal(hotel)" />
-            <div class="info">
-                <h3>{{ hotel.name }}</h3>
-                <p class="desc">{{ hotel.description }}</p>
-                <p class="price">от {{ hotel.price }} $ в сутки / Есть сезонные скидки</p>
-            </div>
-        </div>
-
-        <div v-if="modalVisible" class="modal-overlay" @click.self="closeModal">
-            <div class="modal-content">
-                <swiper :modules="[Navigation]" 
-                        :slides-per-view="1" 
-                        navigation 
-                        :initial-slide="currentIndex" 
-                        class="modal-swiper"
-                >
-                    <swiper-slide v-for="(img, i) in currentHotel.images" :key="i">
-                        <div class="slide-content">
-                            <img v-lazy :data-src="img" :alt="currentHotel.name" />
-                        </div>
-                    </swiper-slide>
-                </swiper>
-
-                <button class="close-button" @click="closeModal">✖</button>
-            </div>
-        </div>
+        <HotelCard v-for="hotel in hotels" :key="hotel.name" :hotel="hotel" />
     </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Navigation } from 'swiper/modules';
+import HotelCard from '@/components/HotelCard.vue';
 import { imagePath } from '@/components/imagePath';
 
-import 'swiper/css'
-import 'swiper/css/navigation'
-
-const hotels = ref([
+const hotels = [
     {
         name: 'Dan Tel Aviv Hotel',
         description: 'Один из самых известных отелей в городе, удобно расположен на морском побережье. Из отеля открывается вид на Средиземное море. К услугам гостей терраса для загара с видом на пляж и большим открытым бассейном.',
@@ -208,21 +177,7 @@ const hotels = ref([
             imagePath('/images/hotels/netanya/margoa/4.webp')
         ]
     }
-])
-
-const modalVisible = ref(false)
-const currentHotel = ref(null)
-const currentIndex = ref(0)
-
-function openModal(hotel, index = 0) {
-    currentHotel.value = hotel;
-    currentIndex.value = index;
-    modalVisible.value = true;
-}
-
-function closeModal() {
-    modalVisible.value = false;
-}
+]
 </script>
 
 <style scoped>
@@ -232,86 +187,5 @@ function closeModal() {
     gap: 2rem;
     justify-content: center;
     margin: 50px 0;
-}
-
-.hotel-card {
-    max-width: 350px;
-    border-radius: 12px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.hotel-card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    cursor: zoom-in;
-}
-
-.hotel-card .info {
-    padding: 1rem;
-}
-
-.desc {
-    padding: 10px 0;
-} 
-
-.price {
-    font-weight: bold;
-    margin-top: 0.5rem;
-    color: #1b263b;
-}
-
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.modal-content {
-    position: relative;
-    height: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.modal-swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.modal-swiper :deep(.swiper-slide) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-content img {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-}
-
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    border: none;
-    background: #000;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    cursor: pointer;
-    padding: 0.25rem 0.6rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    z-index: 10;
 }
 </style>
