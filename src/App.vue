@@ -10,8 +10,8 @@ function toggleMenu() {
 </script>
 
 <template>
-  <div class="background"></div>
-  <div class="app-container">
+  <!-- <div class="background"></div> -->
+  <!-- <div class="app-container"> -->
     <header>
       <nav class="nav desktop">
         <RouterLink to="/">Главная</RouterLink>
@@ -48,7 +48,7 @@ function toggleMenu() {
     <main>
       <RouterView />
     </main>
-  </div>
+  <!-- </div> -->
     
 </template>
 
@@ -106,7 +106,7 @@ nav a:first-of-type {
   }
 }
 
-.background {
+/* .background {
   position: fixed;
   top: 0;
   left: 0;
@@ -122,7 +122,7 @@ nav a:first-of-type {
 .app-container {
   position: relative;
   z-index: 1;
-}
+} */
 
 .header-contact {
   display: flex;

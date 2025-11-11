@@ -6,9 +6,16 @@
   margin: 0;
   font-weight: normal;
 }
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 body {
   /* position: relative; */
-  height: 100%;
+  /* height: 100%; */
   color: var(--color-text);
   /* background: url('/images/israel.webp') no-repeat center center fixed; */
   /* background-size: cover; */
@@ -45,7 +52,7 @@ body {
      transform: translateZ(0);
   }
 } */
-/* body::before {
+body::before {
 content: "";
   position: fixed;
   top: 0;
@@ -56,7 +63,8 @@ content: "";
   background-size: cover;
   z-index: -1;
   transform: translateZ(0);
-} */
+  will-change: transform;
+}
 
 #app {
   max-width: 1280px;
