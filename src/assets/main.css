@@ -1,5 +1,3 @@
-/* @import './base.css'; */
-
 *,
 *::before,
 *::after {
@@ -10,19 +8,16 @@
 
 html, body {
   height: calc(var(--vh, 1vh) * 100);
+  height: -webkit-fill-available;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
 body {
-  /* position: relative; */
   min-height: calc(var(--vh, 1vh) * 100);
   color: var(--color-text);
   background: url('/images/israel.webp') no-repeat center center;
   background-size: cover;
-  /* transition:
-    color 0.5s
-    background-color 0.5s; */
   line-height: 1.6;
   font-family:
     'Inter',
@@ -43,29 +38,6 @@ body {
   -webkit-overflow-scrolling: touch;
   -moz-osx-font-smoothing: grayscale;
 }
-/* @media (max-width: 768px) {
-  body {
-    background: url('/images/israel.webp') no-repeat center center;
-    background-size: cover;
-    background-attachment: scroll;
-    position: absolute;
-     z-index: -1;
-     transform: translateZ(0);
-  }
-} */
-/* body::before {
-content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('/images/israel.webp') no-repeat center center;
-  background-size: cover;
-  z-index: -1;
-  transform: translateZ(0);
-  will-change: transform;
-} */
 
 #app {
   max-width: 1280px;
