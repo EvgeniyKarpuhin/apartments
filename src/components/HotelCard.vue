@@ -43,12 +43,7 @@ const props = defineProps({
 })
 
 const modalVisible = ref(false)
-const swiperReady = ref(false)
 const currentIndex = ref(0)
-
-function onSwiperInit() {
-  swiperReady.value = true
-}
 
 function openModal(index = 0) {
     currentIndex.value = index;
@@ -202,7 +197,6 @@ button {
     padding: 0.25rem 0.6rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 100;
-    /* transition: opacity 0.1s ease; */
 }
 
 .nav-button {

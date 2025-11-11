@@ -9,9 +9,9 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: url('/images/israel.webp') no-repeat;
+  background: url('/images/israel.webp') no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   transition:
     color 0.5s
     background-color 0.5s;
