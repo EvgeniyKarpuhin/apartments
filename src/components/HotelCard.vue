@@ -1,7 +1,7 @@
 <template>
     <div class="hotel-card">
-        <swiper :modules="[Autoplay]" :slides-per-view="1" :loop="true"
-            :autoplay="{ delay: 7000, disableOnInteraction: false }" class="mySwiper">
+        <swiper :modules="[Navigation]" :slides-per-view="1" :loop="true"
+             class="mySwiper">
             <swiper-slide v-for="(img, index) in hotel.images" :key="index" @click="openModal(index)">
                 <img v-lazy :data-src="img" :alt="hotel.name" class="image" />
             </swiper-slide>
@@ -19,8 +19,8 @@
                         class="modal-swiper">
                         <swiper-slide v-for="(img, i) in hotel.images" :key="i">
                             <div class="slide-content">
-                                <img v-lazy :data-src="img" :alt="hotel.name" />
-                                <button class="close-button" @click="closeModal">✖</button>
+                                <img :src="img" :alt="hotel.name" />
+                                <button class="close-button" @click.stop="closeModal">✖</button>
                             </div>
                         </swiper-slide>
                     </swiper>
@@ -33,7 +33,7 @@
 <script setup>
 import { ref } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -43,7 +43,12 @@ const props = defineProps({
 })
 
 const modalVisible = ref(false)
+const swiperReady = ref(false)
 const currentIndex = ref(0)
+
+function onSwiperInit() {
+  swiperReady.value = true
+}
 
 function openModal(index = 0) {
     currentIndex.value = index;
