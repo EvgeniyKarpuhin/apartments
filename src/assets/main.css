@@ -9,8 +9,8 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  /* background: url('/images/israel.webp') no-repeat center center; */
-  /* background-size: cover; */
+  background: url('/images/israel.webp') no-repeat center center fixed;
+  background-size: cover;
   transition:
     color 0.5s
     background-color 0.5s;
@@ -33,7 +33,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body::before {
+@media (max-width: 768px) {
+  body {
+    background: url('/images/israel.webp') no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+/* body::before {
 content: "";
   position: fixed;
   top: 0;
@@ -42,9 +49,9 @@ content: "";
   height: 100%;
   background: url('/images/israel.webp') no-repeat center center;
   background-size: cover;
-  z-index: -1; /* чтобы фон был позади контента */
+  z-index: -1;
   transform: translateZ(0);
-}
+} */
 
 #app {
   max-width: 1280px;
