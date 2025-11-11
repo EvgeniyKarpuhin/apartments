@@ -17,11 +17,11 @@ body {
   /* position: relative; */
   /* height: 100%; */
   color: var(--color-text);
-  /* background: url('/images/israel.webp') no-repeat center center fixed; */
-  /* background-size: cover; */
-  transition:
+  background: url('/images/israel.webp') no-repeat center center;
+  background-size: cover;
+  /* transition:
     color 0.5s
-    background-color 0.5s;
+    background-color 0.5s; */
   line-height: 1.6;
   font-family:
     'Inter',
@@ -52,7 +52,7 @@ body {
      transform: translateZ(0);
   }
 } */
-body::before {
+/* body::before {
 content: "";
   position: fixed;
   top: 0;
@@ -64,7 +64,7 @@ content: "";
   z-index: -1;
   transform: translateZ(0);
   will-change: transform;
-}
+} */
 
 #app {
   max-width: 1280px;
