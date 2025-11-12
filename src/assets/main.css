@@ -8,7 +8,7 @@
 
 html, body {
   /* height: calc(var(--vh, 1vh) * 100); */
-  height: -webkit-fill-available;
+  height: 100%;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -33,6 +33,7 @@ body {
     'Helvetica Neue',
     sans-serif;
   font-size: 15px;
+  overflow: hidden; 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
