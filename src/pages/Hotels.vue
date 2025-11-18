@@ -10,14 +10,14 @@ import { imagePath } from '@/components/imagePath';
 
 const hotels = [
     {
-        name: 'Dan Tel Aviv Hotel',
-        description: 'Один из самых известных отелей в городе, удобно расположен на морском побережье. Из отеля открывается вид на Средиземное море. К услугам гостей терраса для загара с видом на пляж и большим открытым бассейном.',
-        price: 500,
+        name: 'Carlton Tel Aviv Hotel',
+        description: 'Отель расположен на пристани для яхт. К услугам гостей терраса на крыше с бассейном и видом на море. В номерах среди удобств частный балкон с видом на море или город. Из всех обеденных зон открывается вид на море и гавань.',
+        price: 400,
         images: [
-            imagePath('/images/hotels/telaviv/dan/11843033.webp'),
-            imagePath('/images/hotels/telaviv/dan/183827187.webp'),
-            imagePath('/images/hotels/telaviv/dan/183827178.webp'),
-            imagePath('/images/hotels/telaviv/dan/183827199.webp')
+            imagePath('/images/hotels/telaviv/carl/1.webp'),
+            imagePath('/images/hotels/telaviv/carl/2.webp'),
+            imagePath('/images/hotels/telaviv/carl/3.webp'),
+            imagePath('/images/hotels/telaviv/carl/4.webp')
             
         ]
     },
