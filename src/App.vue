@@ -23,7 +23,7 @@ function toggleMenu() {
 
       <div class="header-contact">
         <span class="contact-text">Связаться с нами:</span>
-        <a href="https://t.me/ArrowKnight" target="_blank" class="icon telegram" aria-label="Telegram">
+        <a href="https://t.me/Sofia_Reminska" target="_blank" class="icon telegram" aria-label="Telegram">
           <i class="fab fa-telegram-plane"></i>
         </a>
         <a href="https://wa.me/972526717648" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
