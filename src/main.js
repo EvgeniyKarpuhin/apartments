@@ -42,6 +42,13 @@ window.addEventListener('resize', setRealHeight);
 //   window.visualViewport.addEventListener('scroll', setRealHeight);
 // }
 
+const urlParams = new URLSearchParams(window.location.search);
+const redirect = urlParams.get("redirect");
+
+if(redirect) {
+  window.history.replaceState(null, null, redirect);
+}
+
 const app = createApp(App)
 
 app.use(createPinia())
