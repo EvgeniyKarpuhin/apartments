@@ -10,8 +10,6 @@ function toggleMenu() {
 </script>
 
 <template>
-  <!-- <div class="background"></div> -->
-  <!-- <div class="app-container"> -->
     <header>
       <nav class="nav desktop">
         <RouterLink to="/">Главная</RouterLink>
@@ -48,7 +46,6 @@ function toggleMenu() {
     <main>
       <RouterView />
     </main>
-  <!-- </div> -->
     
 </template>
 
@@ -105,24 +102,6 @@ nav a:first-of-type {
     padding: 1rem 0;
   }
 }
-
-/* .background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("/images/israel.webp") no-repeat center center;
-  background-size: cover;
-  z-index: -1;
-  transform: translateZ(0);
-  will-change: transform;
-}
-
-.app-container {
-  position: relative;
-  z-index: 1;
-} */
 
 .header-contact {
   display: flex;

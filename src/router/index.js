@@ -21,13 +21,4 @@ const router = createRouter({
   routes
 })
 
-// router.beforeEach((to, from, next) => {
-//   const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
-//   if(isMobile && to.path === 'Home') {
-//     next({name: 'MobileHome'})
-//   } else {
-//     next()
-//   }
-// })
-
 export default router
