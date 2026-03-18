@@ -60,6 +60,8 @@ body::before {
 } */
 
 #app {
+  position: relative;
+  z-index: 1;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 2rem;
