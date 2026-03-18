@@ -19,7 +19,7 @@ body {
   color: var(--color-text);
   background: url('/images/israel.webp') no-repeat center center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   line-height: 1.6;
   font-family:
     'Inter',
@@ -42,11 +42,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   body {
     background-attachment: fixed;
   }
-}
+} */
 
 #app {
   max-width: 1280px;
