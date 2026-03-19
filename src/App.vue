@@ -108,7 +108,7 @@ nav a:first-of-type {
 .site-bg {
   position: fixed;
   inset: 0;
-  background: url('/public/images/israel.webp') no-repeat center center;
+  background: url('/images/israel.webp') no-repeat center center;
   background-size: cover;
   pointer-events: none;
   z-index: -1;
