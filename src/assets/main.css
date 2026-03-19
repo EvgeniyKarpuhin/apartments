@@ -12,8 +12,9 @@ html, body {
   padding: 0;
 }
 body {
-  min-height: calc(var(--vh, 1vh) * 100);
-  /* min-height: 100dvh; */
+  min-height: 100vh;
+  /* min-height: calc(var(--vh, 1vh) * 100); */
+  min-height: 100dvh;
   color: var(--color-text);
   /* background: url('/images/israel.webp') no-repeat center center; */
   /* background-size: cover; */
@@ -41,7 +42,7 @@ body {
   background: transparent;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -51,7 +52,7 @@ body::before {
   pointer-events: none;
   transform: translateZ(0);
   will-change: transform;
-}
+} */
 
 /* @media (min-width: 1024px) {
   body {
@@ -63,6 +64,8 @@ body::before {
   position: relative;
   z-index: 1;
   max-width: 1280px;
+  min-height: 100vh;
+  min-height: 100dvh;
   margin: 0 auto;
   padding: 0 2rem;
   font-weight: normal;
