@@ -10,8 +10,6 @@ function toggleMenu() {
 </script>
 
 <template>
-
-    <div class="site-bg"></div>
     <header>
       <nav class="nav desktop">
         <RouterLink to="/">Главная</RouterLink>
@@ -103,17 +101,6 @@ nav a:first-of-type {
     font-size: 1rem;
     padding: 1rem 0;
   }
-}
-
-.site-bg {
-  position: fixed;
-  inset: 0;
-  background: url('/images/israel.webp') no-repeat center center;
-  background-size: cover;
-  pointer-events: none;
-  z-index: -1;
-  transform: translate3d(0, 0, 0);
-  will-change: transform;
 }
 
 .header-contact {
