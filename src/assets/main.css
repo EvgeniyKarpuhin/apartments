@@ -17,7 +17,7 @@ body {
   min-height: 100dvh;
   color: var(--color-text);
   background: url('/images/israel.webp') no-repeat center center;
-  /* background-size: cover; */
+  background-size: cover;
   /* background-attachment: fixed; */
   line-height: 1.6;
   font-family:
