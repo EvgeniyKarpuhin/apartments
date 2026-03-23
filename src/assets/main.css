@@ -83,13 +83,13 @@ a {
   }
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
 
   #app {
     width: 100%;
     display: grid;
   }
-}
+} */
 
 .catalog {
   display: flex;
