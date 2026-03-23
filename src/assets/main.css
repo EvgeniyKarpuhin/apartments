@@ -33,7 +33,7 @@ body {
     'Helvetica Neue',
     sans-serif;
   font-size: 15px;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
