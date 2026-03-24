@@ -34,7 +34,7 @@
     background: rgba(255, 255, 255, 0.63);
     border-radius: 10px;
     padding: 30px;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 @media (max-width: 768px) {
