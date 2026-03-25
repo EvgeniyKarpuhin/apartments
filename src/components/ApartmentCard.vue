@@ -99,7 +99,7 @@ function closeModal() {
   overflow: hidden;
   background: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  max-width: 350px;
+  max-width: 370px;
 }
 
 .image {
@@ -128,8 +128,8 @@ function closeModal() {
 }
 
 .info ul {
-  list-style: none;
-  padding: 0;
+  list-style: outside;
+  padding: 0 20px;
 }
 
 .fw {
