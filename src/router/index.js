@@ -5,15 +5,21 @@ import Netanya from '../pages/Netanya.vue'
 import BatYam from '../pages/BatYam.vue'
 import Hotels from '../pages/Hotels.vue'
 import About from '@/pages/About.vue'
+import ApartmentDetails from '@/pages/ApartmentDetails.vue'
 
-
-const routes = [
+export const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/telaviv', name: 'TelAviv', component: TelAviv },
   { path: '/netanya', name: 'Netanya', component: Netanya },
   { path: '/batyam', name: 'BatYam', component: BatYam },
   { path: '/hotels', name: 'Hotels', component: Hotels },
-  { path: '/about', name: 'About', component: About }
+  { path: '/about', name: 'About', component: About },
+  {
+    path: '/apartments/:city/:slug',
+    name: 'ApartmentDetails',
+    component: ApartmentDetails,
+    props: true
+  }
 ]
 
 const router = createRouter({

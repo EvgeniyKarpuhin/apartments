@@ -5,7 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "sync-data": "node scripts/sync-apartments.js",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "generate-og-images": "node scripts/generate-og-images.js",
+    "generate-og-pages": "node scripts/generate-og-pages.js",
+    "prebuild": "npm run sync-data && npm run generate-sitemap",
     "build": "vite build",
+    "postbuild": "npm run generate-og-images && npm run generate-og-pages",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
@@ -18,9 +24,12 @@
     "vue3-carousel": "^0.15.1"
   },
   "devDependencies": {
+    "@unhead/vue": "^3.1.6",
     "@vitejs/plugin-vue": "^5.2.3",
     "gh-pages": "^6.3.0",
+    "sharp": "^0.35.2",
     "vite": "^6.2.4",
-    "vite-plugin-vue-devtools": "^7.7.2"
+    "vite-plugin-vue-devtools": "^7.7.2",
+    "vite-ssg": "^28.3.0"
   }
 }

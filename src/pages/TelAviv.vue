@@ -16,6 +16,7 @@ import { imagePath } from '@/components/imagePath';
 const apartments = [
     {
         id: 1,
+        slug: '1-bedroom-ben-yehuda',
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
@@ -37,6 +38,7 @@ const apartments = [
     },
     {
         id: 2,
+        slug: '1-bedroom-ben-yehuda-balcony',
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
@@ -58,6 +60,7 @@ const apartments = [
     },
     {
         id: 3,
+        slug: '1-bedroom-dizengoff-balcony',
         title: 'Двухкомнатная квартира возле парка',
         description: [
             'Планировка: спальня + зал с кухней',
@@ -84,6 +87,7 @@ const apartments = [
     },
     {
         id: 4,
+        slug: '2-bedroom-dizengoff-balcony',
         title: 'Трёхкомнатная квартира возле парка',
         description: [
             'Планировка: 2 спальни + зал с кухней',
@@ -108,6 +112,7 @@ const apartments = [
     },
     {
         id: 5,
+        slug: '2-bedroom-ben-yehuda-penthouse',
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
@@ -130,6 +135,7 @@ const apartments = [
     },
     {
         id: 6,
+        slug: '2-bedroom-pinsker',
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
@@ -155,6 +161,7 @@ const apartments = [
     },
     {
         id: 7,
+        slug: '1-bedroom-allenby-balcony',
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
@@ -176,6 +183,7 @@ const apartments = [
     },
     {
         id: 8,
+        slug: '1-bedroom-allenby',
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
@@ -196,6 +204,7 @@ const apartments = [
     },
     {
         id: 9,
+        slug: '1-bedroom-allenby-luxury',
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
@@ -220,6 +229,7 @@ const apartments = [
     },
     {
         id: 10,
+        slug: '2-bedroom-ben-yehuda',
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
@@ -242,6 +252,7 @@ const apartments = [
     },
     {
         id: 11,
+        slug: '2-bedroom-ben-yehuda-seaview',
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
@@ -266,6 +277,7 @@ const apartments = [
     },
     {
         id: 12,
+        slug: '2-bedroom-nachalat-binyamin-balcony',
         title: 'Трёхкомнатная квартира возле рынка',
         description: [
             'Планировка: 2 спальни + зал с кухней',
@@ -287,6 +299,7 @@ const apartments = [
     },
     {
         id: 13,
+        slug: '1-bedroom-allenby-ahad-haam',
         title: 'Двухкомнатная квартира в центре',
         description: [
             'Планировка: спальня + зал с кухней',
@@ -308,6 +321,7 @@ const apartments = [
     },
     {
         id: 14,
+        slug: '2-bedroom-allenby-ahad-haam-balcony',
         title: 'Трёхкомнатная квартира в центре',
         description: [
             'Планировка: 2 спальни + зал с кухней',
@@ -329,6 +343,7 @@ const apartments = [
     },
     {
         id: 15,
+        slug: '3-bedroom-pinsker-garden',
         title: 'Четырёхкомнатная квартира у моря',
         description: [
             'Планировка: 3 спальни + зал с кухней',
@@ -354,6 +369,7 @@ const apartments = [
     },
     {
         id: 16,
+        slug: '2-bedroom-ness-tsiona',
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
@@ -375,6 +391,7 @@ const apartments = [
     },
     {
         id: 17,
+        slug: '3-bedroom-yaavets-penthouse',
         title: 'Четырёхкомнатная квартира у моря',
         description: [
             'Планировка: 3 спальни + зал с кухней',
@@ -401,6 +418,7 @@ const apartments = [
     },
     {
         id: 18,
+        slug: '4-bedroom-pinsker-penthouse-pool',
         title: 'Пятикомнатная квартира у моря',
         description: [
             'Планировка: 4 спальни + зал с кухней',

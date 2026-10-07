@@ -12,7 +12,7 @@
         :key="index" 
         @click="openModal(index)"
       >
-        <img v-lazy :data-src="img" alt="Фото квартиры" class="image" />
+        <img v-lazy :data-src="img" :alt="`Фото: ${apartment.title}`" class="image" />
       </swiper-slide>
     </swiper>
     <div class="info">
@@ -32,7 +32,7 @@
             class="modal-swiper">
             <swiper-slide v-for="(img, index) in apartment.images" :key="index">
               <div class="slide-content">
-                <img v-lazy :data-src="img" alt="Увеличенное фото">
+                <img v-lazy :data-src="img" :alt="`Увеличенное фото: ${apartment.title}`">
                 <button class="close-button" @click="closeModal">✖</button>
               </div>
             </swiper-slide>
@@ -44,7 +44,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Autoplay, Navigation } from 'swiper/modules'
 
@@ -67,6 +67,35 @@ function openModal(index) {
 function closeModal() {
   modalVisible.value = false
 }
+
+let __ldScript = null
+onMounted(() => {
+  try {
+    const ld = {
+      "@context": "https://schema.org",
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Apartment",
+        "name": apartment.title,
+        "description": Array.isArray(apartment.description) ? apartment.description.join('; ') : apartment.description,
+        "image": apartment.images || []
+      },
+      "price": apartment.price,
+      "priceCurrency": "USD"
+    }
+
+    __ldScript = document.createElement('script')
+    __ldScript.type = 'application/ld+json'
+    __ldScript.text = JSON.stringify(ld)
+    document.head.appendChild(__ldScript)
+  } catch (e) {
+    // safe fail
+  }
+})
+
+onUnmounted(() => {
+  if (__ldScript && __ldScript.parentNode) __ldScript.parentNode.removeChild(__ldScript)
+})
 </script>
 
 <style scoped>

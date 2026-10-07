@@ -1,24 +1,33 @@
 import './assets/main.css'
 
-import { createApp } from 'vue'
+import { ViteSSG } from 'vite-ssg'
 import { createPinia } from 'pinia'
 
 import App from './App.vue'
-import router from './router'
+import { routes } from './router'
 import lazyLoad from './directives/lazyLoad'
+import { getApartmentPaths } from '@/data/apartments'
 
-function setRealHeight() { 
-  const vh = window.innerHeight * 0.01; 
-  document.documentElement.style.setProperty('--vh', `${vh}px`); 
-} 
+function setRealHeight() {
+  const vh = window.innerHeight * 0.01
+  document.documentElement.style.setProperty('--vh', `${vh}px`)
+}
 
-setRealHeight(); 
-window.addEventListener('resize', setRealHeight);
+export const createApp = ViteSSG(
+  App,
+  { routes },
+  ({ app, router, isClient }) => {
+    app.use(createPinia())
+    app.directive('lazy', lazyLoad)
 
-const app = createApp(App)
+    if (isClient) {
+      setRealHeight()
+      window.addEventListener('resize', setRealHeight)
+    }
 
-app.use(createPinia())
-app.use(router)
-app.directive('lazy', lazyLoad)
+    return { app, router }
+  }
+)
 
-app.mount('#app')
+export const includedRoutes = getApartmentPaths()
+

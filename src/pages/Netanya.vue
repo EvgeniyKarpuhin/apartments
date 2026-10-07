@@ -16,6 +16,7 @@ import { imagePath } from '@/components/imagePath';
 const apartments = [
     {
         id: 1,
+        slug: '2-bedroom-ha-matmid-seaview-balcony',
         title: 'Трёхкомнатная квартира в центре',
         description: [
             'Планировка: 2 спальни + зал с кухней',
@@ -38,6 +39,7 @@ const apartments = [
     },
     {
         id: 2,
+        slug: '2-bedroom-ha-matmid',
         title: 'Трёхкомнатная квартира в центре',
         description: [
             'Планировка: 2 спальни + зал с кухней',
@@ -63,6 +65,7 @@ const apartments = [
     },
     {
         id: 3,
+        slug: '1-bedroom-smilanski',
         title: 'Двухкомнатная квартира в центре',
         description: [
             'Планировка: спальня + зал с кухней',
@@ -85,6 +88,7 @@ const apartments = [
     },
     {
         id: 4,
+        slug: '3-bedroom-macdonald',
         title: 'Четырёхкомнатная квартира в центре',
         description: [
             'Планировка: 3 спальни + зал с кухней',
@@ -111,6 +115,7 @@ const apartments = [
     },
     {
         id: 5,
+        slug: '4-bedroom-shlomo-melech-balcony',
         title: 'Пятикомнатная квартира у моря',
         description: [
             'Планировка: 4 спальни + зал с кухней',
@@ -136,6 +141,7 @@ const apartments = [
     },
     {
         id: 6,
+        slug: '1-bedroom-oved-ben-ami',
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
@@ -158,6 +164,7 @@ const apartments = [
     },
     {
         id: 7,
+        slug: '2-bedroom-nitsa-balcony',
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
@@ -184,6 +191,7 @@ const apartments = [
     },
     {
         id: 8,
+        slug: '2-bedroom-gad-machnes-balcony',
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
@@ -210,6 +218,7 @@ const apartments = [
     },
     {
         id: 9,
+        slug: '3-bedroom-macdonald-balcony',
         title: 'Четыррёхкомнатная квартира у моря',
         description: [
             'Планировка: 3 спальни + зал с кухней',
