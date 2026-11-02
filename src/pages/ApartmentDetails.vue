@@ -2,11 +2,42 @@
   <div class="details-page" v-if="apartment">
     <h1>{{ apartment.title }} в {{ apartment.cityName }}</h1>
     <div class="gallery">
-      <img v-for="(img, index) in apartment.images" :key="index" :src="img" :alt="`Фото ${apartment.title} ${index + 1}`" />
+      <Swiper
+        :slides-per-view="1"
+        :loop="apartment.images.length > 1"
+        class="photo-swiper"
+        @swiper="onSwiper"
+        @slide-change="onSlideChange"
+      >
+        <SwiperSlide v-for="(img, index) in apartment.images" :key="img">
+          <img :src="img" :alt="`Фото ${apartment.title} ${index + 1}`" />
+        </SwiperSlide>
+      </Swiper>
+      <button
+        v-if="apartment.images.length > 1"
+        class="gallery-arrow gallery-arrow-prev"
+        type="button"
+        aria-label="Предыдущее фото"
+        @click="swiperInstance?.slidePrev()"
+      >
+        ‹
+      </button>
+      <button
+        v-if="apartment.images.length > 1"
+        class="gallery-arrow gallery-arrow-next"
+        type="button"
+        aria-label="Следующее фото"
+        @click="swiperInstance?.slideNext()"
+      >
+        ›
+      </button>
+      <span v-if="apartment.images.length > 1" class="gallery-counter" aria-live="polite">
+        {{ activeSlide + 1 }} / {{ apartment.images.length }}
+      </span>
     </div>
     <div class="info">
       <p class="price">от {{ apartment.price }} $ в сутки</p>
-      <ul>
+      <ul class="description-list">
         <li v-for="(desc, index) in apartment.description" :key="index">{{ desc }}</li>
       </ul>
       <div class="contacts">
@@ -24,10 +55,23 @@
 <script setup>
 import { useHead } from '@unhead/vue'
 import { useRoute } from 'vue-router'
+import { ref } from 'vue'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/css'
 import { getApartment } from '@/data/apartments'
 
 const route = useRoute()
 const apartment = getApartment(route.params.city, route.params.slug)
+const swiperInstance = ref(null)
+const activeSlide = ref(0)
+
+function onSwiper(swiper) {
+  swiperInstance.value = swiper
+}
+
+function onSlideChange(swiper) {
+  activeSlide.value = swiper.realIndex
+}
 
 if (apartment) {
   useHead({
@@ -61,17 +105,70 @@ if (apartment) {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  position: relative;
+  overflow: hidden;
   margin-bottom: 1.5rem;
+  border-radius: 8px;
+  background: #111;
+}
+
+.photo-swiper {
+  width: 100%;
+}
+
+.photo-swiper :deep(.swiper-slide) {
+  aspect-ratio: 16 / 10;
 }
 
 .gallery img {
+  display: block;
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 12px;
+}
+
+.gallery-arrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  padding: 0;
+  transform: translateY(-50%);
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: #2808e0;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.gallery-arrow-prev {
+  left: 1rem;
+}
+
+.gallery-arrow-next {
+  right: 1rem;
+}
+
+.gallery-arrow:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.gallery-counter {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 4px;
+  background: rgb(0 0 0 / 65%);
+  color: #fff;
+  font-size: 0.875rem;
 }
 
 .info {
@@ -86,6 +183,10 @@ if (apartment) {
 .price {
   font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.description-list {
+  padding-left: 1rem;
 }
 
 .contacts {
@@ -117,8 +218,8 @@ if (apartment) {
 }
 
 .secondary {
-  background: #54c7fc;
-  color: #1b263b;
+  background: #229ED9;
+  /* color: #1b263b; */
 }
 
 .not-found {
@@ -131,13 +232,7 @@ if (apartment) {
     padding: 1rem;
   }
 
-  .gallery {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0.75rem;
-  }
-
-  .gallery img {
-    height: auto;
+  .photo-swiper :deep(.swiper-slide) {
     aspect-ratio: 4 / 3;
   }
 
@@ -152,6 +247,15 @@ if (apartment) {
   .cta {
     width: 100%;
     flex-basis: auto;
+  }
+
+  .gallery-arrow-prev {
+    left: 0.75rem;
+  }
+
+  .gallery-arrow-next,
+  .gallery-counter {
+    right: 0.75rem;
   }
 }
 </style>
