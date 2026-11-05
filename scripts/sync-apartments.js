@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import { parseApartmentFacts } from '../src/data/apartmentFacts.js'
 
 const pagesDir = path.resolve('src/pages')
 const outputFile = path.resolve('src/data/apartments.js')
@@ -34,6 +35,7 @@ function parseApartmentBlock(block, pageName) {
   if (descMatch) {
     const items = [...descMatch[1].matchAll(/['"](.*?)['"]/g)].map((m) => normalizeField(m[1]))
     fields.description = items
+    Object.assign(fields, parseApartmentFacts(items))
   }
 
   const imagesMatch = /images:\s*\[(.*?)\]/gs.exec(block)
@@ -102,6 +104,11 @@ function buildExport(apartmentCollections) {
       lines.push(`    city: '${item.city}',`)
       lines.push(`    cityName: '${item.cityName}',`)
       lines.push(`    slug: '${item.slug}',`)
+      lines.push(`    distanceToBeach: ${item.distanceToBeach || 0},`)
+      lines.push(`    guests: ${item.guests || 0},`)
+      lines.push(`    area: ${item.area || 0},`)
+      lines.push(`    bedrooms: ${item.bedrooms || 0},`)
+      lines.push(`    bathrooms: ${item.bathrooms || 0},`)
       lines.push(`    title: '${item.title.replace(/'/g, "\\'")}',`)
       lines.push('    description: [')
       lines.push(desc)

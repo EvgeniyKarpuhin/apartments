@@ -17,14 +17,13 @@ const apartments = [
     {
         id: 1,
         slug: '1-bedroom-ben-yehuda',
+        distanceToBeach: 600,
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 600 метров',
             'Площадь: 40 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/1bdr-mrby/1.webp'),
@@ -39,14 +38,13 @@ const apartments = [
     {
         id: 2,
         slug: '1-bedroom-ben-yehuda-balcony',
+        distanceToBeach: 600,
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 600 метров',
             'Площадь: 50 кв.м.',
-            'Санузел: 1',
-            'Балкон: есть'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/1bdr-mrbys/1.webp'),
@@ -61,14 +59,13 @@ const apartments = [
     {
         id: 3,
         slug: '1-bedroom-dizengoff-balcony',
+        distanceToBeach: 750,
         title: 'Двухкомнатная квартира возле парка',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 750 метров',
             'Площадь: 45 кв.м.',
-            'Санузел: 1',
-            'Балкон: есть'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/1bdr-mrdzb/1.webp'),
@@ -88,14 +85,13 @@ const apartments = [
     {
         id: 4,
         slug: '2-bedroom-dizengoff-balcony',
+        distanceToBeach: 750,
         title: 'Трёхкомнатная квартира возле парка',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 750 метров',
             'Площадь: 65 кв.м.',
-            'Санузел: 1',
-            'Балкон: есть'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/2bdr-mrdz/1.webp'),
@@ -113,14 +109,13 @@ const apartments = [
     {
         id: 5,
         slug: '2-bedroom-ben-yehuda-penthouse',
+        distanceToBeach: 600,
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 600 метров',
             'Площадь: 75 кв.м.',
-            'Санузел: 1',
-            'Балкон: есть'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/2bdr-mrbyp/1.webp'),
@@ -136,14 +131,13 @@ const apartments = [
     {
         id: 6,
         slug: '2-bedroom-pinsker',
+        distanceToBeach: 600,
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 600 метров',
             'Площадь: 100 кв.м.',
-            'Санузел: 2',
-            'Балкон: есть'
+            'Санузел: 2'
         ],
         images: [
             imagePath('/images/apartments/telaviv/2bdr-mrpi/1.webp'),
@@ -162,14 +156,13 @@ const apartments = [
     {
         id: 7,
         slug: '1-bedroom-allenby-balcony',
+        distanceToBeach: 500,
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 500 метров',
             'Площадь: 45 кв.м.',
-            'Санузел: 1',
-            'Балкон: есть'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/1bdr-mrallb/1.webp'),
@@ -184,14 +177,13 @@ const apartments = [
     {
         id: 8,
         slug: '1-bedroom-allenby',
+        distanceToBeach: 500,
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 500 метров',
             'Площадь: 50 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/1bdr-mralld/1.webp'),
@@ -205,14 +197,13 @@ const apartments = [
     {
         id: 9,
         slug: '1-bedroom-allenby-luxury',
+        distanceToBeach: 500,
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 500 метров',
             'Площадь: 50 кв.м.',
-            'Санузел: 1',
-            'Балкон: есть'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/1bdr-mralllux/1.webp'),
@@ -230,14 +221,13 @@ const apartments = [
     {
         id: 10,
         slug: '2-bedroom-ben-yehuda',
+        distanceToBeach: 500,
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 500 метров',
             'Площадь: 60 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/2bdr-mrmon/1.webp'),
@@ -253,14 +243,13 @@ const apartments = [
     {
         id: 11,
         slug: '2-bedroom-ben-yehuda-seaview',
+        distanceToBeach: 500,
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 500 метров',
             'Площадь: 65 кв.м.',
-            'Санузел: 1',
-            'Балкон: есть'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/2bdr-mrmonsd/1.webp'),
@@ -278,14 +267,13 @@ const apartments = [
     {
         id: 12,
         slug: '2-bedroom-nachalat-binyamin-balcony',
+        distanceToBeach: 900,
         title: 'Трёхкомнатная квартира возле рынка',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 900 метров',
             'Площадь: 80 кв.м.',
-            'Санузел: 1',
-            'Балкон: есть'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/2bdr-mrkats/1.webp'),
@@ -300,14 +288,13 @@ const apartments = [
     {
         id: 13,
         slug: '1-bedroom-allenby-ahad-haam',
+        distanceToBeach: 1200,
         title: 'Двухкомнатная квартира в центре',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 1200 метров',
             'Площадь: 55 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/1bdr-mrrothd/1.webp'),
@@ -322,14 +309,13 @@ const apartments = [
     {
         id: 14,
         slug: '2-bedroom-allenby-ahad-haam-balcony',
+        distanceToBeach: 1200,
         title: 'Трёхкомнатная квартира в центре',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 1200 метров',
             'Площадь: 90 кв.м.',
-            'Санузел: 2',
-            'Балкон: есть'
+            'Санузел: 2'
         ],
         images: [
             imagePath('/images/apartments/telaviv/2bdr-mrrothd/1.webp'),
@@ -344,14 +330,13 @@ const apartments = [
     {
         id: 15,
         slug: '3-bedroom-pinsker-garden',
+        distanceToBeach: 600,
         title: 'Четырёхкомнатная квартира у моря',
         description: [
             'Планировка: 3 спальни + зал с кухней',
             'Количество человек: до 8',
-            'Расстояние до пляжа: 600 метров',
             'Площадь: 120 кв.м.',
-            'Санузел: 2',
-            'Балкон: есть'
+            'Санузел: 2'
         ],
         images: [
             imagePath('/images/apartments/telaviv/3bdr-mrpig/1.webp'),
@@ -370,14 +355,13 @@ const apartments = [
     {
         id: 16,
         slug: '2-bedroom-ness-tsiona',
+        distanceToBeach: 200,
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 200 метров',
             'Площадь: 60 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/telaviv/2bdr-mrallness/1.webp'),
@@ -392,14 +376,13 @@ const apartments = [
     {
         id: 17,
         slug: '3-bedroom-yaavets-penthouse',
+        distanceToBeach: 550,
         title: 'Четырёхкомнатная квартира у моря',
         description: [
             'Планировка: 3 спальни + зал с кухней',
             'Количество человек: до 8',
-            'Расстояние до пляжа: 550 метров',
             'Площадь: 120 кв.м.',
-            'Санузел: 2',
-            'Балкон: есть'
+            'Санузел: 2'
         ],
         images: [
             imagePath('/images/apartments/telaviv/3bdr-mryav/1.webp'),
@@ -419,14 +402,13 @@ const apartments = [
     {
         id: 18,
         slug: '4-bedroom-pinsker-penthouse-pool',
+        distanceToBeach: 600,
         title: 'Пятикомнатная квартира у моря',
         description: [
             'Планировка: 4 спальни + зал с кухней',
             'Количество человек: до 10',
-            'Расстояние до пляжа: 600 метров',
             'Площадь: 140 кв.м.',
-            'Санузел: 3',
-            'Балкон: есть'
+            'Санузел: 3'
         ],
         images: [
             imagePath('/images/apartments/telaviv/4bdr-mrpid/1.webp'),

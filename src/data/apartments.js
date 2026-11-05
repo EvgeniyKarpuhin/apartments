@@ -6,14 +6,17 @@ export const batyamApartments = [
     city: 'batyam',
     cityName: 'Бат-Яме',
     slug: '2-bedroom-balfour-87',
+    distanceToBeach: 900,
+    guests: 6,
+    area: 65,
+    bedrooms: 2,
+    bathrooms: 1,
     title: 'Трёхкомнатная квартира в центре',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 900 метров',
       'Площадь: 65 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 100,
     images: [
@@ -35,14 +38,17 @@ export const batyamApartments = [
     city: 'batyam',
     cityName: 'Бат-Яме',
     slug: '1-bedroom-balfour-87',
+    distanceToBeach: 900,
+    guests: 4,
+    area: 40,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира в центре',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 900 метров',
       'Площадь: 40 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 80,
     images: [
@@ -59,14 +65,17 @@ export const batyamApartments = [
     city: 'batyam',
     cityName: 'Бат-Яме',
     slug: '1-bedroom-balfour-122',
+    distanceToBeach: 500,
+    guests: 4,
+    area: 40,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира у моря',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 500 метров',
       'Площадь: 40 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 90,
     images: [
@@ -86,14 +95,17 @@ export const batyamApartments = [
     city: 'batyam',
     cityName: 'Бат-Яме',
     slug: '2-bedroom-balfour-122',
+    distanceToBeach: 500,
+    guests: 6,
+    area: 65,
+    bedrooms: 2,
+    bathrooms: 1,
     title: 'Трёхкомнатная квартира у моря',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 500 метров',
       'Площадь: 65 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 110,
     images: [
@@ -115,14 +127,17 @@ export const batyamApartments = [
     city: 'batyam',
     cityName: 'Бат-Яме',
     slug: '2-bedroom-ben-gurion-seaview',
+    distanceToBeach: 50,
+    guests: 6,
+    area: 75,
+    bedrooms: 2,
+    bathrooms: 1,
     title: 'Трёхкомнатная квартира у моря',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 50 метров',
       'Площадь: 75 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 120,
     images: [
@@ -145,14 +160,17 @@ export const batyamApartments = [
     city: 'batyam',
     cityName: 'Бат-Яме',
     slug: '1-bedroom-ben-gurion-seaview',
+    distanceToBeach: 50,
+    guests: 4,
+    area: 35,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира у моря',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 50 метров',
       'Площадь: 35 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 90,
     images: [
@@ -172,14 +190,17 @@ export const batyamApartments = [
     city: 'batyam',
     cityName: 'Бат-Яме',
     slug: '3-bedroom-marganit-street',
+    distanceToBeach: 200,
+    guests: 7,
+    area: 100,
+    bedrooms: 3,
+    bathrooms: 2,
     title: 'Четырёхкомнатная квартира у моря',
     description: [
       'Планировка: 3 спальни + зал с кухней',
       'Количество человек: до 7',
-      'Расстояние до пляжа: 200 метров',
       'Площадь: 100 кв.м.',
-      'Санузел: 2',
-      'Балкон: нет'
+      'Санузел: 2'
     ],
     price: 120,
     images: [
@@ -202,14 +223,17 @@ export const batyamApartments = [
     city: 'batyam',
     cityName: 'Бат-Яме',
     slug: '3-bedroom-yitshak-sadeh-seaview',
+    distanceToBeach: 250,
+    guests: 7,
+    area: 150,
+    bedrooms: 3,
+    bathrooms: 3,
     title: 'Четырёхкомнатная квартира у моря',
     description: [
       'Планировка: 3 спальни + зал с кухней',
       'Количество человек: до 7',
-      'Расстояние до пляжа: 250 метров',
       'Площадь: 150 кв.м.',
-      'Санузел: 3',
-      'Балкон: есть'
+      'Санузел: 3'
     ],
     price: 300,
     images: [
@@ -250,14 +274,17 @@ export const batyamApartments = [
     city: 'batyam',
     cityName: 'Бат-Яме',
     slug: '1-bedroom-balfour-50',
+    distanceToBeach: 650,
+    guests: 4,
+    area: 40,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира у моря',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 650 метров',
       'Площадь: 40 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 80,
     images: [
@@ -279,14 +306,17 @@ export const netanyaApartments = [
     city: 'netanya',
     cityName: 'Нетании',
     slug: '2-bedroom-ha-matmid-seaview-balcony',
+    distanceToBeach: 400,
+    guests: 6,
+    area: 100,
+    bedrooms: 2,
+    bathrooms: 2,
     title: 'Трёхкомнатная квартира в центре',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 400 метров',
       'Площадь: 100 кв.м.',
-      'Санузел: 2',
-      'Балкон: есть'
+      'Санузел: 2'
     ],
     price: 150,
     images: [
@@ -304,14 +334,17 @@ export const netanyaApartments = [
     city: 'netanya',
     cityName: 'Нетании',
     slug: '2-bedroom-ha-matmid',
+    distanceToBeach: 400,
+    guests: 6,
+    area: 90,
+    bedrooms: 2,
+    bathrooms: 1,
     title: 'Трёхкомнатная квартира в центре',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 400 метров',
       'Площадь: 90 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 140,
     images: [
@@ -332,14 +365,17 @@ export const netanyaApartments = [
     city: 'netanya',
     cityName: 'Нетании',
     slug: '1-bedroom-smilanski',
+    distanceToBeach: 650,
+    guests: 4,
+    area: 40,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира в центре',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 650 метров',
       'Площадь: 40 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 110,
     images: [
@@ -357,14 +393,17 @@ export const netanyaApartments = [
     city: 'netanya',
     cityName: 'Нетании',
     slug: '3-bedroom-macdonald',
+    distanceToBeach: 500,
+    guests: 7,
+    area: 120,
+    bedrooms: 3,
+    bathrooms: 3,
     title: 'Четырёхкомнатная квартира в центре',
     description: [
       'Планировка: 3 спальни + зал с кухней',
       'Количество человек: до 7',
-      'Расстояние до пляжа: 500 метров',
       'Площадь: 120 кв.м.',
-      'Санузел: 3',
-      'Балкон: нет'
+      'Санузел: 3'
     ],
     price: 220,
     images: [
@@ -386,14 +425,17 @@ export const netanyaApartments = [
     city: 'netanya',
     cityName: 'Нетании',
     slug: '4-bedroom-shlomo-melech-balcony',
+    distanceToBeach: 300,
+    guests: 9,
+    area: 155,
+    bedrooms: 4,
+    bathrooms: 3,
     title: 'Пятикомнатная квартира у моря',
     description: [
       'Планировка: 4 спальни + зал с кухней',
       'Количество человек: до 9',
-      'Расстояние до пляжа: 300 метров',
       'Площадь: 155 кв.м.',
-      'Санузел: 3',
-      'Балкон: есть'
+      'Санузел: 3'
     ],
     price: 300,
     images: [
@@ -414,14 +456,17 @@ export const netanyaApartments = [
     city: 'netanya',
     cityName: 'Нетании',
     slug: '1-bedroom-oved-ben-ami',
+    distanceToBeach: 350,
+    guests: 4,
+    area: 40,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира у моря',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 350 метров',
       'Площадь: 40 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 150,
     images: [
@@ -439,14 +484,17 @@ export const netanyaApartments = [
     city: 'netanya',
     cityName: 'Нетании',
     slug: '2-bedroom-nitsa-balcony',
+    distanceToBeach: 300,
+    guests: 5,
+    area: 90,
+    bedrooms: 2,
+    bathrooms: 2,
     title: 'Трёхкомнатная квартира у моря',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 5',
-      'Расстояние до пляжа: 300 метров',
       'Площадь: 90 кв.м.',
-      'Санузел: 2',
-      'Балкон: есть'
+      'Санузел: 2'
     ],
     price: 210,
     images: [
@@ -468,14 +516,17 @@ export const netanyaApartments = [
     city: 'netanya',
     cityName: 'Нетании',
     slug: '2-bedroom-gad-machnes-balcony',
+    distanceToBeach: 250,
+    guests: 6,
+    area: 100,
+    bedrooms: 2,
+    bathrooms: 2,
     title: 'Трёхкомнатная квартира у моря',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 250 метров',
       'Площадь: 100 кв.м.',
-      'Санузел: 2',
-      'Балкон: есть'
+      'Санузел: 2'
     ],
     price: 200,
     images: [
@@ -497,14 +548,17 @@ export const netanyaApartments = [
     city: 'netanya',
     cityName: 'Нетании',
     slug: '3-bedroom-macdonald-balcony',
+    distanceToBeach: 500,
+    guests: 8,
+    area: 135,
+    bedrooms: 3,
+    bathrooms: 3,
     title: 'Четыррёхкомнатная квартира у моря',
     description: [
       'Планировка: 3 спальни + зал с кухней',
       'Количество человек: до 8',
-      'Расстояние до пляжа: 500 метров',
       'Площадь: 135 кв.м.',
-      'Санузел: 3',
-      'Балкон: есть'
+      'Санузел: 3'
     ],
     price: 180,
     images: [
@@ -537,14 +591,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '1-bedroom-ben-yehuda',
+    distanceToBeach: 600,
+    guests: 4,
+    area: 40,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира у моря',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 600 метров',
       'Площадь: 40 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 110,
     images: [
@@ -561,14 +618,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '1-bedroom-ben-yehuda-balcony',
+    distanceToBeach: 600,
+    guests: 4,
+    area: 50,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира у моря',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 600 метров',
       'Площадь: 50 кв.м.',
-      'Санузел: 1',
-      'Балкон: есть'
+      'Санузел: 1'
     ],
     price: 130,
     images: [
@@ -585,14 +645,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '1-bedroom-dizengoff-balcony',
+    distanceToBeach: 750,
+    guests: 4,
+    area: 45,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира возле парка',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 750 метров',
       'Площадь: 45 кв.м.',
-      'Санузел: 1',
-      'Балкон: есть'
+      'Санузел: 1'
     ],
     price: 160,
     images: [
@@ -614,14 +677,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '2-bedroom-dizengoff-balcony',
+    distanceToBeach: 750,
+    guests: 6,
+    area: 65,
+    bedrooms: 2,
+    bathrooms: 1,
     title: 'Трёхкомнатная квартира возле парка',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 750 метров',
       'Площадь: 65 кв.м.',
-      'Санузел: 1',
-      'Балкон: есть'
+      'Санузел: 1'
     ],
     price: 220,
     images: [
@@ -641,14 +707,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '2-bedroom-ben-yehuda-penthouse',
+    distanceToBeach: 600,
+    guests: 6,
+    area: 75,
+    bedrooms: 2,
+    bathrooms: 1,
     title: 'Трёхкомнатная квартира у моря',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 600 метров',
       'Площадь: 75 кв.м.',
-      'Санузел: 1',
-      'Балкон: есть'
+      'Санузел: 1'
     ],
     price: 270,
     images: [
@@ -666,14 +735,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '2-bedroom-pinsker',
+    distanceToBeach: 600,
+    guests: 6,
+    area: 100,
+    bedrooms: 2,
+    bathrooms: 2,
     title: 'Трёхкомнатная квартира у моря',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 600 метров',
       'Площадь: 100 кв.м.',
-      'Санузел: 2',
-      'Балкон: есть'
+      'Санузел: 2'
     ],
     price: 280,
     images: [
@@ -694,14 +766,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '1-bedroom-allenby-balcony',
+    distanceToBeach: 500,
+    guests: 4,
+    area: 45,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира у моря',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 500 метров',
       'Площадь: 45 кв.м.',
-      'Санузел: 1',
-      'Балкон: есть'
+      'Санузел: 1'
     ],
     price: 100,
     images: [
@@ -718,14 +793,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '1-bedroom-allenby',
+    distanceToBeach: 500,
+    guests: 4,
+    area: 50,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира у моря',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 500 метров',
       'Площадь: 50 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 100,
     images: [
@@ -741,14 +819,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '1-bedroom-allenby-luxury',
+    distanceToBeach: 500,
+    guests: 4,
+    area: 50,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира у моря',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 500 метров',
       'Площадь: 50 кв.м.',
-      'Санузел: 1',
-      'Балкон: есть'
+      'Санузел: 1'
     ],
     price: 120,
     images: [
@@ -768,14 +849,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '2-bedroom-ben-yehuda',
+    distanceToBeach: 500,
+    guests: 6,
+    area: 60,
+    bedrooms: 2,
+    bathrooms: 1,
     title: 'Трёхкомнатная квартира у моря',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 500 метров',
       'Площадь: 60 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 210,
     images: [
@@ -793,14 +877,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '2-bedroom-ben-yehuda-seaview',
+    distanceToBeach: 500,
+    guests: 6,
+    area: 65,
+    bedrooms: 2,
+    bathrooms: 1,
     title: 'Трёхкомнатная квартира у моря',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 500 метров',
       'Площадь: 65 кв.м.',
-      'Санузел: 1',
-      'Балкон: есть'
+      'Санузел: 1'
     ],
     price: 240,
     images: [
@@ -820,14 +907,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '2-bedroom-nachalat-binyamin-balcony',
+    distanceToBeach: 900,
+    guests: 6,
+    area: 80,
+    bedrooms: 2,
+    bathrooms: 1,
     title: 'Трёхкомнатная квартира возле рынка',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 900 метров',
       'Площадь: 80 кв.м.',
-      'Санузел: 1',
-      'Балкон: есть'
+      'Санузел: 1'
     ],
     price: 230,
     images: [
@@ -844,14 +934,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '1-bedroom-allenby-ahad-haam',
+    distanceToBeach: 1200,
+    guests: 4,
+    area: 55,
+    bedrooms: 1,
+    bathrooms: 1,
     title: 'Двухкомнатная квартира в центре',
     description: [
       'Планировка: спальня + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 1200 метров',
       'Площадь: 55 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 120,
     images: [
@@ -868,14 +961,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '2-bedroom-allenby-ahad-haam-balcony',
+    distanceToBeach: 1200,
+    guests: 6,
+    area: 90,
+    bedrooms: 2,
+    bathrooms: 2,
     title: 'Трёхкомнатная квартира в центре',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 6',
-      'Расстояние до пляжа: 1200 метров',
       'Площадь: 90 кв.м.',
-      'Санузел: 2',
-      'Балкон: есть'
+      'Санузел: 2'
     ],
     price: 250,
     images: [
@@ -892,14 +988,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '3-bedroom-pinsker-garden',
+    distanceToBeach: 600,
+    guests: 8,
+    area: 120,
+    bedrooms: 3,
+    bathrooms: 2,
     title: 'Четырёхкомнатная квартира у моря',
     description: [
       'Планировка: 3 спальни + зал с кухней',
       'Количество человек: до 8',
-      'Расстояние до пляжа: 600 метров',
       'Площадь: 120 кв.м.',
-      'Санузел: 2',
-      'Балкон: есть'
+      'Санузел: 2'
     ],
     price: 270,
     images: [
@@ -920,14 +1019,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '2-bedroom-ness-tsiona',
+    distanceToBeach: 200,
+    guests: 4,
+    area: 60,
+    bedrooms: 2,
+    bathrooms: 1,
     title: 'Трёхкомнатная квартира у моря',
     description: [
       'Планировка: 2 спальни + зал с кухней',
       'Количество человек: до 4',
-      'Расстояние до пляжа: 200 метров',
       'Площадь: 60 кв.м.',
-      'Санузел: 1',
-      'Балкон: нет'
+      'Санузел: 1'
     ],
     price: 250,
     images: [
@@ -944,14 +1046,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '3-bedroom-yaavets-penthouse',
+    distanceToBeach: 550,
+    guests: 8,
+    area: 120,
+    bedrooms: 3,
+    bathrooms: 2,
     title: 'Четырёхкомнатная квартира у моря',
     description: [
       'Планировка: 3 спальни + зал с кухней',
       'Количество человек: до 8',
-      'Расстояние до пляжа: 550 метров',
       'Площадь: 120 кв.м.',
-      'Санузел: 2',
-      'Балкон: есть'
+      'Санузел: 2'
     ],
     price: 330,
     images: [
@@ -973,14 +1078,17 @@ export const telavivApartments = [
     city: 'telaviv',
     cityName: 'Тель-Авиве',
     slug: '4-bedroom-pinsker-penthouse-pool',
+    distanceToBeach: 600,
+    guests: 10,
+    area: 140,
+    bedrooms: 4,
+    bathrooms: 3,
     title: 'Пятикомнатная квартира у моря',
     description: [
       'Планировка: 4 спальни + зал с кухней',
       'Количество человек: до 10',
-      'Расстояние до пляжа: 600 метров',
       'Площадь: 140 кв.м.',
-      'Санузел: 3',
-      'Балкон: есть'
+      'Санузел: 3'
     ],
     price: 700,
     images: [

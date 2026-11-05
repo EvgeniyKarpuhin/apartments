@@ -17,14 +17,13 @@
     {
         id: 1,
         slug: '2-bedroom-balfour-87',
+        distanceToBeach: 900,
         title: 'Трёхкомнатная квартира в центре',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 900 метров',
             'Площадь: 65 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/batyam/2bdr-bf87/1.webp'),
@@ -44,14 +43,13 @@
     {
         id: 2,
         slug: '1-bedroom-balfour-87',
+        distanceToBeach: 900,
         title: 'Двухкомнатная квартира в центре',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 900 метров',
             'Площадь: 40 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/batyam/1bdr-bf87/1.webp'),
@@ -66,14 +64,13 @@
     {
         id: 3,
         slug: '1-bedroom-balfour-122',
+        distanceToBeach: 500,
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 500 метров',
             'Площадь: 40 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/batyam/1bdr-bf122/1.webp'),
@@ -91,14 +88,13 @@
     {
         id: 4,
         slug: '2-bedroom-balfour-122',
+        distanceToBeach: 500,
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 500 метров',
             'Площадь: 65 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/batyam/2bdr-bf122/1.webp'),
@@ -118,14 +114,13 @@
     {
         id: 5,
         slug: '2-bedroom-ben-gurion-seaview',
+        distanceToBeach: 50,
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 50 метров',
             'Площадь: 75 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/batyam/2bdr-bg5a/1.webp'),
@@ -146,14 +141,13 @@
     {
         id: 6,
         slug: '1-bedroom-ben-gurion-seaview',
+        distanceToBeach: 50,
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 50 метров',
             'Площадь: 35 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/batyam/1bdr-bg4a/1.webp'),
@@ -171,14 +165,13 @@
     {
         id: 7,
         slug: '3-bedroom-marganit-street',
+        distanceToBeach: 200,
         title: 'Четырёхкомнатная квартира у моря',
         description: [
             'Планировка: 3 спальни + зал с кухней',
             'Количество человек: до 7',
-            'Расстояние до пляжа: 200 метров',
             'Площадь: 100 кв.м.',
-            'Санузел: 2',
-            'Балкон: нет'
+            'Санузел: 2'
         ],
         images: [
             imagePath('/images/apartments/batyam/3bdr-mrg4/1.webp'),
@@ -199,14 +192,13 @@
     {
         id: 8,
         slug: '3-bedroom-yitshak-sadeh-seaview',
+        distanceToBeach: 250,
         title: 'Четырёхкомнатная квартира у моря',
         description: [
             'Планировка: 3 спальни + зал с кухней',
             'Количество человек: до 7',
-            'Расстояние до пляжа: 250 метров',
             'Площадь: 150 кв.м.',
-            'Санузел: 3',
-            'Балкон: есть'
+            'Санузел: 3'
         ],
         images: [
             imagePath('/images/apartments/batyam/4bdr-sade/1.webp'),
@@ -245,14 +237,13 @@
     {
         id: 9,
         slug: '1-bedroom-balfour-50',
+        distanceToBeach: 650,
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 650 метров',
             'Площадь: 40 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/batyam/1bdr-bf50/1.webp'),

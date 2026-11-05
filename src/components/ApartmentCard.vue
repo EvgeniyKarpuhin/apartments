@@ -1,24 +1,28 @@
 <template>
   <div class="apartment-card">
-    <swiper 
-      :modules="[Autoplay]" 
-      :slides-per-view="1" 
-      :loop="true"
-      :autoplay="{ delay: 3000, disableOnInteraction: false }" 
-      class="mySwiper"
-    >
-      <swiper-slide 
-        v-for="(img, index) in apartment.images" 
-        :key="index" 
-        @click="openModal(index)"
+    <div class="image-frame">
+      <swiper
+        :modules="[Autoplay]"
+        :slides-per-view="1"
+        :loop="true"
+        :autoplay="{ delay: 3000, disableOnInteraction: false }"
+        class="mySwiper"
       >
-        <img v-lazy :data-src="img" :alt="`Фото: ${apartment.title}`" class="image" />
-      </swiper-slide>
-    </swiper>
+        <swiper-slide
+          v-for="(img, index) in apartment.images"
+          :key="index"
+          @click="openModal(index)"
+        >
+          <img v-lazy :data-src="img" :alt="`Фото: ${apartment.title}`" class="image" />
+        </swiper-slide>
+      </swiper>
+      <span v-if="beachDistance" class="distance-badge">{{ beachDistance }}</span>
+    </div>
     <div class="info">
       <h3 class="fw">{{ apartment.title }}</h3>
-      <ul>
-        <li v-for="(desc, index) in apartment.description" :key="index">
+      <ApartmentFacts :apartment="apartment" />
+      <ul v-if="visibleDescription.length">
+        <li v-for="(desc, index) in visibleDescription" :key="index">
           {{ desc }}
         </li>
       </ul>
@@ -44,9 +48,12 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { computed, ref, onMounted, onUnmounted } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Autoplay, Navigation } from 'swiper/modules'
+import { getBeachDistance } from './beachDistance'
+import { getAdditionalApartmentDescription } from '@/data/apartmentFacts'
+import ApartmentFacts from './ApartmentFacts.vue'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -58,6 +65,8 @@ const { apartment } = defineProps({
 
 const modalVisible = ref(false)
 const currentIndex = ref(0)
+const beachDistance = getBeachDistance(apartment.distanceToBeach)
+const visibleDescription = computed(() => getAdditionalApartmentDescription(apartment.description || []))
 
 function openModal(index) {
   currentIndex.value = index
@@ -106,6 +115,26 @@ onUnmounted(() => {
   overflow: hidden;
 }
 
+.image-frame {
+  position: relative;
+}
+
+.distance-badge {
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  left: 12px;
+  max-width: calc(100% - 24px);
+  padding: 0.45rem 0.7rem;
+  border-radius: 4px;
+  background: rgb(0 0 0 / 72%);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  pointer-events: none;
+}
+
 .swiper-slide {
   height: 100%;
   display: flex;
@@ -149,16 +178,16 @@ onUnmounted(() => {
 }
 
 .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 13rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* height: 13rem; */
   margin: 1rem;
 }
 
 .info ul {
   list-style: outside;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 .fw {

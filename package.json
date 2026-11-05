@@ -16,6 +16,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@lucide/vue": "^1.68.0",
     "axios": "^1.9.0",
     "pinia": "^3.0.2",
     "swiper": "^11.2.8",

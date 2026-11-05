@@ -17,14 +17,13 @@ const apartments = [
     {
         id: 1,
         slug: '2-bedroom-ha-matmid-seaview-balcony',
+        distanceToBeach: 400,
         title: 'Трёхкомнатная квартира в центре',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 400 метров',
             'Площадь: 100 кв.м.',
-            'Санузел: 2',
-            'Балкон: есть'
+            'Санузел: 2'
         ],
         images: [
             imagePath('/images/apartments/netanya/2bdr-shb/1.webp'),
@@ -40,14 +39,13 @@ const apartments = [
     {
         id: 2,
         slug: '2-bedroom-ha-matmid',
+        distanceToBeach: 400,
         title: 'Трёхкомнатная квартира в центре',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 400 метров',
             'Площадь: 90 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/netanya/2bdr-sh/1.webp'),
@@ -66,14 +64,13 @@ const apartments = [
     {
         id: 3,
         slug: '1-bedroom-smilanski',
+        distanceToBeach: 650,
         title: 'Двухкомнатная квартира в центре',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 650 метров',
             'Площадь: 40 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/netanya/1bdr-sh/1.webp'),
@@ -89,14 +86,13 @@ const apartments = [
     {
         id: 4,
         slug: '3-bedroom-macdonald',
+        distanceToBeach: 500,
         title: 'Четырёхкомнатная квартира в центре',
         description: [
             'Планировка: 3 спальни + зал с кухней',
             'Количество человек: до 7',
-            'Расстояние до пляжа: 500 метров',
             'Площадь: 120 кв.м.',
-            'Санузел: 3',
-            'Балкон: нет'
+            'Санузел: 3'
         ],
         images: [
             imagePath('/images/apartments/netanya/3bdr-mc11/1.webp'),
@@ -116,14 +112,13 @@ const apartments = [
     {
         id: 5,
         slug: '4-bedroom-shlomo-melech-balcony',
+        distanceToBeach: 300,
         title: 'Пятикомнатная квартира у моря',
         description: [
             'Планировка: 4 спальни + зал с кухней',
             'Количество человек: до 9',
-            'Расстояние до пляжа: 300 метров',
             'Площадь: 155 кв.м.',
-            'Санузел: 3',
-            'Балкон: есть'
+            'Санузел: 3'
         ],
         images: [
             imagePath('/images/apartments/netanya/4bdr-shlmel/1.webp'),
@@ -142,14 +137,13 @@ const apartments = [
     {
         id: 6,
         slug: '1-bedroom-oved-ben-ami',
+        distanceToBeach: 350,
         title: 'Двухкомнатная квартира у моря',
         description: [
             'Планировка: спальня + зал с кухней',
             'Количество человек: до 4',
-            'Расстояние до пляжа: 350 метров',
             'Площадь: 40 кв.м.',
-            'Санузел: 1',
-            'Балкон: нет'
+            'Санузел: 1'
         ],
         images: [
             imagePath('/images/apartments/netanya/1bdr-crm/1.webp'),
@@ -165,14 +159,13 @@ const apartments = [
     {
         id: 7,
         slug: '2-bedroom-nitsa-balcony',
+        distanceToBeach: 300,
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 5',
-            'Расстояние до пляжа: 300 метров',
             'Площадь: 90 кв.м.',
-            'Санузел: 2',
-            'Балкон: есть'
+            'Санузел: 2'
         ],
         images: [
             imagePath('/images/apartments/netanya/2bdr-op/1.webp'),
@@ -192,14 +185,13 @@ const apartments = [
     {
         id: 8,
         slug: '2-bedroom-gad-machnes-balcony',
+        distanceToBeach: 250,
         title: 'Трёхкомнатная квартира у моря',
         description: [
             'Планировка: 2 спальни + зал с кухней',
             'Количество человек: до 6',
-            'Расстояние до пляжа: 250 метров',
             'Площадь: 100 кв.м.',
-            'Санузел: 2',
-            'Балкон: есть'
+            'Санузел: 2'
         ],
         images: [
             imagePath('/images/apartments/netanya/2bdr-gdmhs/1.webp'),
@@ -219,14 +211,13 @@ const apartments = [
     {
         id: 9,
         slug: '3-bedroom-macdonald-balcony',
+        distanceToBeach: 500,
         title: 'Четыррёхкомнатная квартира у моря',
         description: [
             'Планировка: 3 спальни + зал с кухней',
             'Количество человек: до 8',
-            'Расстояние до пляжа: 500 метров',
             'Площадь: 135 кв.м.',
-            'Санузел: 3',
-            'Балкон: есть'
+            'Санузел: 3'
         ],
         images: [
             imagePath('/images/apartments/netanya/3bdr-mc14/1.webp'),

@@ -36,6 +36,11 @@ function extractBlockForSlug(slug) {
   return apartmentsText.slice(start + 1, end)
 }
 
+function extractField(block, regex) {
+  const match = regex.exec(block)
+  return match ? match[1] : null
+}
+
 function extractTitle(block) {
   const m = /title:\s*'([^']+)'/.exec(block)
   return m ? m[1] : ''
@@ -44,8 +49,10 @@ function extractTitle(block) {
 function extractDescription(block) {
   const m = /description:\s*\[([\s\S]*?)\]/.exec(block)
   if (!m) return ''
-  const first = /'([^']+)'/.exec(m[1])
-  return first ? first[1] : ''
+  return [...m[1].matchAll(/'([^']+)'/g)]
+    .map((match) => match[1])
+    .filter((description) => /^(?:Планировка|Количество человек|Площадь|Санузел):/.test(description))
+    .join('. ')
 }
 
 function extractImage(block) {
@@ -63,11 +70,18 @@ for (const p of paths) {
     console.warn('no block for', slug)
     continue
   }
-  const title = extractTitle(block) || `${city} — апартаменты` 
-  const description = extractDescription(block) || 'Смотрите фотографии, цены и отзывы.'
+  const apartmentTitle = extractTitle(block) || `${city} — апартаменты`
+  const cityName = extractField(block, /cityName:\s*'([^']+)'/) || city
+  const title = `${apartmentTitle} в ${cityName}`
+  const price = extractField(block, /price:\s*(\d+)/)
+  const detailDescription = extractDescription(block).replace(/\.\s*\./g, '.')
+  const description = [detailDescription, price ? `Цена: от ${price} $ в сутки` : '']
+    .filter(Boolean)
+    .join('. ') || 'Смотрите фотографии и характеристики квартиры.'
   const image = extractImage(block) || '/images/apartments/telaviv/1bdr-mrallb/1.webp'
 
   const pngImage = `${siteOrigin}/assets/og/${city}-${slug}.png`
+  const svgImage = `${siteOrigin}/assets/og/${city}-${slug}.svg`
   const pageHtml = `<!doctype html>
 <html lang="ru">
 <head>
@@ -82,6 +96,11 @@ for (const p of paths) {
 <meta property="og:description" content="${escapeHtml(description)}" />
 <meta property="og:url" content="${siteOrigin}${p}" />
 <meta property="og:image" content="${pngImage}" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image" content="${svgImage}" />
+<meta property="og:image:type" content="image/svg+xml" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
