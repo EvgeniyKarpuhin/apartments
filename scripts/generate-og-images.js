@@ -99,7 +99,7 @@ function makeOverlaySvg(title, facts, price) {
     makeFactSvg(bathroomsIcon, 350, 550, 570, `${facts.bathrooms} ${pluralize(facts.bathrooms, 'санузел', 'санузла', 'санузлов')}`)
   ].join('\n')
     const priceSvg = priceText
-      ? `<text x='1160' y='548' text-anchor='end' class='price'>${escapeHtml(priceText)}</text><text x='1160' y='578' text-anchor='end' font-family='Arial, sans-serif' font-size='17' font-weight='500' fill='#eee'>цена зависит от сезона и количества ночей</text>`
+      ? `<text x='1160' y='548' text-anchor='end' class='price'>${escapeHtml(priceText)}</text><text x='1160' y='578' text-anchor='end' font-family='Arial, sans-serif' font-size='17' font-weight='500' fill='#eee'>цену уточняйте у менеджера</text>`
       : ''
   const citySvg = ''
 

@@ -40,7 +40,7 @@
     <div class="info">
       <div class="pice-btm">
         <p class="price">от {{ apartment.price }}$ в сутки</p>
-        <span class="price-info">цена зависит от сезона и количества ночей</span>
+        <span class="price-info">цену уточняйте у менеджера</span>
       </div>
       
       <ApartmentFacts :apartment="apartment" />
