@@ -14,6 +14,7 @@
             <p class="desc">{{ hotel.description }}</p>
             <p class="price">от {{ hotel.price }} $ в сутки / Есть сезонные скидки</p>
         </div>
+        <BookingRequest :property-name="hotel.name" />
         <div v-if="modalVisible" class="modal-overlay" @click.self="closeModal">
             <div class="modal-content">
                 <div class="modal-swiper-wrapper">
@@ -37,6 +38,7 @@ import { ref } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation } from 'swiper/modules';
 import { getBeachDistance } from './beachDistance'
+import BookingRequest from './BookingRequest.vue'
 
 import 'swiper/css'
 import 'swiper/css/navigation'

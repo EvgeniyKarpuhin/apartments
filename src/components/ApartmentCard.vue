@@ -28,6 +28,7 @@
       </ul>
       <p class="fw">от {{ apartment.price }} $ в сутки</p>
     </div>
+    <BookingRequest :property-name="apartment.title" />
 
     <div v-if="modalVisible" class="modal-overlay" @click.self="closeModal">
       <div class="modal-content">
@@ -54,6 +55,7 @@ import { Autoplay, Navigation } from 'swiper/modules'
 import { getBeachDistance } from './beachDistance'
 import { getAdditionalApartmentDescription } from '@/data/apartmentFacts'
 import ApartmentFacts from './ApartmentFacts.vue'
+import BookingRequest from './BookingRequest.vue'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
