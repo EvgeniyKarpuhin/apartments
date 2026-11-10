@@ -19,6 +19,11 @@
         <p class="booking-property">{{ propertyName }}</p>
 
         <form @submit.prevent="submit">
+          <label class="booking-honeypot" aria-hidden="true">
+            Website
+            <input v-model="form.website" type="text" tabindex="-1" autocomplete="off" />
+          </label>
+
           <label class="booking-field">
             <span>Ваше имя</span>
             <input v-model.trim="form.name" type="text" autocomplete="name" required />
@@ -129,13 +134,15 @@
             <textarea v-model.trim="form.comment" rows="3" placeholder="Напишите, если есть пожелания"></textarea>
           </label>
 
-          <p v-if="submissionNotice" class="booking-notice" role="status">
+          <p v-if="submissionNotice" class="booking-notice" :class="{ 'booking-success': submitted }" role="status">
             {{ submissionNotice }}
           </p>
 
           <div class="booking-actions">
             <button class="booking-cancel" type="button" @click="close">Отменить</button>
-            <button class="booking-submit" type="submit">Отправить</button>
+            <button class="booking-submit" type="submit" :disabled="submitting || submitted">
+              {{ submitting ? 'Отправляем…' : submitted ? 'Отправлено' : 'Отправить' }}
+            </button>
           </div>
         </form>
       </section>
@@ -155,6 +162,8 @@ const props = defineProps({
 
 const open = ref(false)
 const submissionNotice = ref('')
+const submitting = ref(false)
+const submitted = ref(false)
 const form = reactive({
   name: '',
   contactMethod: 'email',
@@ -166,7 +175,8 @@ const form = reactive({
   children: 0,
   childAges: [],
   crib: false,
-  comment: ''
+  comment: '',
+  website: ''
 })
 
 const today = new Date().toLocaleDateString('en-CA')
@@ -209,10 +219,39 @@ watch(open, (isOpen) => {
 function close() {
   open.value = false
   submissionNotice.value = ''
+  submitted.value = false
 }
 
-function submit() {
-  submissionNotice.value = 'Отправка заявок на почту пока не подключена. Сейчас форма работает в демонстрационном режиме.'
+async function submit() {
+  if (submitting.value || submitted.value) return
+
+  submitting.value = true
+  submissionNotice.value = ''
+
+  try {
+    const response = await fetch('/api/booking', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        ...form,
+        propertyName: props.propertyName
+      })
+    })
+
+    const result = await response.json()
+    if (!response.ok) {
+      throw new Error(result.error || 'Не удалось отправить заявку. Попробуйте ещё раз.')
+    }
+
+    submitted.value = true
+    submissionNotice.value = 'Заявка отправлена. Спасибо! Мы свяжемся с вами.'
+  } catch (error) {
+    submissionNotice.value = error instanceof Error
+      ? error.message
+      : 'Не удалось отправить заявку. Попробуйте ещё раз.'
+  } finally {
+    submitting.value = false
+  }
 }
 
 onUnmounted(() => {
@@ -385,6 +424,19 @@ onUnmounted(() => {
   color: #684e0b;
 }
 
+.booking-success {
+  background: #e5f5e9;
+  color: #1d5c2c;
+}
+
+.booking-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .booking-actions {
   display: flex;
   justify-content: flex-end;
@@ -395,6 +447,11 @@ onUnmounted(() => {
 .booking-actions button {
   min-height: 2.7rem;
   padding: 0.55rem 1rem;
+}
+
+.booking-actions button:disabled {
+  cursor: wait;
+  opacity: 0.65;
 }
 
 .booking-cancel {
