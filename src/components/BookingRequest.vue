@@ -18,7 +18,7 @@
         <h2 id="booking-title">Заявка на бронирование</h2>
         <p class="booking-property">{{ propertyName }}</p>
 
-        <form @submit.prevent="submit">
+        <form v-if="!submitted" @submit.prevent="submit">
           <label class="booking-honeypot" aria-hidden="true">
             Website
             <input v-model="form.website" type="text" tabindex="-1" autocomplete="off" />
@@ -134,17 +134,20 @@
             <textarea v-model.trim="form.comment" rows="3" placeholder="Напишите, если есть пожелания"></textarea>
           </label>
 
-          <p v-if="submissionNotice" class="booking-notice" :class="{ 'booking-success': submitted }" role="status">
+          <p v-if="submissionNotice" class="booking-notice" role="alert">
             {{ submissionNotice }}
           </p>
 
           <div class="booking-actions">
             <button class="booking-cancel" type="button" @click="close">Отменить</button>
-            <button class="booking-submit" type="submit" :disabled="submitting || submitted">
-              {{ submitting ? 'Отправляем…' : submitted ? 'Отправлено' : 'Отправить' }}
+            <button class="booking-submit" type="submit" :disabled="submitting">
+              {{ submitting ? 'Отправляем…' : 'Отправить' }}
             </button>
           </div>
         </form>
+        <p v-else class="booking-success" role="status">
+          Заявка отправлена. Спасибо! Мы свяжемся с вами.
+        </p>
       </section>
     </div>
   </Teleport>
@@ -425,6 +428,9 @@ onUnmounted(() => {
 }
 
 .booking-success {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border-radius: 7px;
   background: #e5f5e9;
   color: #1d5c2c;
 }

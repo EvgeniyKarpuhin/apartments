@@ -92,7 +92,7 @@ function formatBooking(data) {
         : `${ageNumber} ${ageNumber === 1 ? 'год' : ageNumber < 5 ? 'года' : 'лет'}`
       return `  Ребёнок ${index + 1}: ${ageLabel}`
     }).join('\n')
-    : '  Нет'
+    : 'Нет'
 
   return [
     `Объект: ${cleanText(data.propertyName, 180)}`,
