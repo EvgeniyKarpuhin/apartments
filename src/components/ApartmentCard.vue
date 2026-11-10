@@ -30,7 +30,7 @@
     </div>
     <BookingRequest
       :property-name="apartment.title"
-      :property-city="apartment.city"
+      :property-city="apartment.city || city"
       :property-slug="apartment.slug"
     />
 
@@ -65,8 +65,12 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-const { apartment } = defineProps({
-  apartment: Object
+defineProps({
+  apartment: Object,
+  city: {
+    type: String,
+    required: true
+  }
 })
 
 const modalVisible = ref(false)

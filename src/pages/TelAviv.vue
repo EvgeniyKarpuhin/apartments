@@ -5,7 +5,7 @@
     </h2>
     <!--Здесь будет список-->
     <div class="catalog">
-        <ApartmentCard v-for="apt in apartments" :key="apt.id" :apartment="apt" />
+        <ApartmentCard v-for="apt in apartments" :key="apt.id" :apartment="apt" city="telaviv" />
     </div>
 </template>
 
