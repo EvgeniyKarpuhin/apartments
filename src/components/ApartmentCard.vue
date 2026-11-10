@@ -65,7 +65,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-defineProps({
+const { apartment } = defineProps({
   apartment: Object,
   city: {
     type: String,
