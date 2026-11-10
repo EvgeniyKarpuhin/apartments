@@ -49,17 +49,6 @@
             />
           </label>
 
-          <div class="booking-field">
-            <label for="booking-city">Город</label>
-            <select id="booking-city" v-model="form.city">
-              <option value="">Все города</option>
-              <option value="batyam">Бат-Ям</option>
-              <option value="netanya">Нетания</option>
-              <option value="telaviv">Тель-Авив</option>
-              <option value="herzliya">Герцлия</option>
-            </select>
-          </div>
-
           <div class="booking-dates">
             <label class="booking-field">
               <span>Дата прилёта</span>
@@ -160,6 +149,14 @@ const props = defineProps({
   propertyName: {
     type: String,
     required: true
+  },
+  propertyCity: {
+    type: String,
+    default: ''
+  },
+  propertySlug: {
+    type: String,
+    default: ''
   }
 })
 
@@ -171,7 +168,6 @@ const form = reactive({
   name: '',
   contactMethod: 'email',
   contact: '',
-  city: '',
   arrival: '',
   departure: '',
   adults: 1,
@@ -237,7 +233,9 @@ async function submit() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         ...form,
-        propertyName: props.propertyName
+        propertyName: props.propertyName,
+        propertyCity: props.propertyCity,
+        propertySlug: props.propertySlug
       })
     })
 

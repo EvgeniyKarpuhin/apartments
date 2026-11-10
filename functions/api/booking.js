@@ -1,4 +1,9 @@
-const cities = new Set(['', 'batyam', 'netanya', 'telaviv', 'herzliya'])
+const propertyCities = new Map([
+  ['batyam', 'Бат-Ям'],
+  ['netanya', 'Нетания'],
+  ['telaviv', 'Тель-Авив'],
+  ['herzliya', 'Герцлия']
+])
 const contactMethods = new Set(['email', 'telegram', 'whatsapp'])
 
 function jsonResponse(body, status = 200) {
@@ -28,10 +33,14 @@ function validateBooking(data) {
   const name = cleanText(data.name, 100)
   const contact = cleanText(data.contact, 254)
   const propertyName = cleanText(data.propertyName, 180)
+  const propertyCity = cleanText(data.propertyCity, 40)
+  const propertySlug = cleanText(data.propertySlug, 100)
 
   if (!name || !contact || !propertyName) return 'Заполните имя, контакт и выбранный объект.'
   if (!contactMethods.has(data.contactMethod)) return 'Выберите способ связи.'
-  if (!cities.has(data.city)) return 'Выберите город из списка.'
+  if ((propertyCity || propertySlug) && (!propertyCities.has(propertyCity) || !/^[a-z0-9-]+$/.test(propertySlug))) {
+    return 'Не удалось определить выбранный объект. Обновите страницу и попробуйте снова.'
+  }
 
   if (data.contactMethod === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact)) {
     return 'Укажите корректный адрес электронной почты.'
@@ -72,13 +81,6 @@ function validateBooking(data) {
 }
 
 function formatBooking(data) {
-  const cityNames = {
-    '': 'Все города',
-    batyam: 'Бат-Ям',
-    netanya: 'Нетания',
-    telaviv: 'Тель-Авив',
-    herzliya: 'Герцлия'
-  }
   const contactNames = {
     email: 'Электронная почта',
     telegram: 'Telegram',
@@ -90,13 +92,17 @@ function formatBooking(data) {
       const ageLabel = ageNumber === 0
         ? 'до 1 года'
         : `${ageNumber} ${ageNumber === 1 ? 'год' : ageNumber < 5 ? 'года' : 'лет'}`
-      return `  Ребёнок ${index + 1}: ${ageLabel}`
+      return `Ребёнок ${index + 1}: ${ageLabel}`
     }).join('\n')
     : 'Нет'
 
+  const propertyDetails = data.propertyCity && data.propertySlug
+    ? [`Город объекта: ${propertyCities.get(data.propertyCity)}`, `Slug объекта: ${data.propertySlug}`]
+    : []
+
   return [
     `Объект: ${cleanText(data.propertyName, 180)}`,
-    `Город: ${cityNames[data.city]}`,
+    ...propertyDetails,
     `Имя: ${cleanText(data.name, 100)}`,
     `Предпочтительный способ связи: ${contactNames[data.contactMethod]}`,
     `Контакт: ${cleanText(data.contact, 254)}`,

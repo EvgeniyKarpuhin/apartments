@@ -28,7 +28,11 @@
       </ul>
       <p class="fw">от {{ apartment.price }} $ в сутки</p>
     </div>
-    <BookingRequest :property-name="apartment.title" />
+    <BookingRequest
+      :property-name="apartment.title"
+      :property-city="apartment.city"
+      :property-slug="apartment.slug"
+    />
 
     <div v-if="modalVisible" class="modal-overlay" @click.self="closeModal">
       <div class="modal-content">
