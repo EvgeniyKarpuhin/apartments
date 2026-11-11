@@ -121,28 +121,22 @@ onUnmounted(() => {
 .swiper {
   width: 100%;
   height: 300px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   overflow: hidden;
+}
+
+.apartment-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 370px;
 }
 
 .image-frame {
   position: relative;
-}
-
-.distance-badge {
-  position: absolute;
-  z-index: 2;
-  bottom: 12px;
-  left: 12px;
-  max-width: calc(100% - 24px);
-  padding: 0.45rem 0.7rem;
-  border-radius: 4px;
-  background: rgb(0 0 0 / 72%);
-  color: #fff;
-  font-size: 0.875rem;
-  font-weight: 600;
-  line-height: 1.2;
-  pointer-events: none;
 }
 
 .swiper-slide {
@@ -156,18 +150,7 @@ onUnmounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
-}
-
-.apartment-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  max-width: 370px;
+  border-radius: 8px 8px 0 0;
 }
 
 .image {
@@ -176,6 +159,22 @@ onUnmounted(() => {
   border-radius: 8px;
   object-fit: cover;
   cursor: zoom-in;
+}
+
+.distance-badge {
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  left: 12px;
+  max-width: calc(100% - 24px);
+  padding: 0.45rem 0.7rem;
+  border-radius: 25px;
+  background: rgb(0 0 0 / 72%);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  pointer-events: none;
 }
 
 .mySwiper .swiper-button-next,

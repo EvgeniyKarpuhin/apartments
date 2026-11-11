@@ -2,7 +2,7 @@
     <h2 class="title">Израиль предлагает большой выбор отелей для отдыха и путешествий — от роскошных 5-звёздочных с бассейнами, спа и видом на море до доступных 3-звёздочных отелей.
         Вы можете забронировать отель у моря, в центре города или рядом с популярными туристическими местами.
     </h2>
-    <div class="hotel-list">
+    <div class="catalog">
         <HotelCard v-for="hotel in hotels" :key="hotel.name" :hotel="hotel" />
     </div>
 </template>
@@ -183,7 +183,7 @@ const hotels = [
 ]
 </script>
 
-<style scoped>
+<!-- <style scoped>
 .hotel-list {
     display: flex;
     flex-wrap: wrap;
@@ -191,4 +191,4 @@ const hotels = [
     justify-content: center;
     margin: 50px 0;
 }
-</style>
+</style> -->

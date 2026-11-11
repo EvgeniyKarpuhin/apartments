@@ -65,7 +65,7 @@ function closeModal() {
 .swiper {
     width: 100%;
     height: 300px;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     overflow: hidden;
 }
 
@@ -100,11 +100,11 @@ function closeModal() {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
 }
 
 .hotel-card {
-    max-width: 350px;
+    max-width: 370px;
     border-radius: 12px;
     overflow: hidden;
     background: #fff;
